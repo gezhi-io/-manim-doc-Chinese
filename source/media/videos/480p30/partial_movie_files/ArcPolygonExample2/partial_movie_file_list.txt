@@ -1,3 +1,3 @@
 # This file is used internally by FFMPEG.
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ArcPolygonExample2/1079597619_174551142_223132457.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ArcPolygonExample2/2903838201_4160205052_632811757.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ArcPolygonExample2/1079597619_3224303539_223132457.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ArcPolygonExample2/2903838201_4160205052_563550356.mp4'

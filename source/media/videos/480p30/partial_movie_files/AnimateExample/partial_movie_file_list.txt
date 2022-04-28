@@ -1,5 +1,6 @@
 # This file is used internally by FFMPEG.
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimateExample/1079597619_3547361106_476340714.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimateExample/2903838201_1733338889_2950471220.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimateExample/2903838201_3529773560_3331836817.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimateExample/2903838201_1733338889_1960085500.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimateExample/1079597619_3914202332_223132457.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimateExample/2903838201_1242508517_2319886907.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimateExample/2903838201_2788781210_2319886907.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimateExample/2903838201_221656792_2319886907.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimateExample/2903838201_1929219191_2319886907.mp4'

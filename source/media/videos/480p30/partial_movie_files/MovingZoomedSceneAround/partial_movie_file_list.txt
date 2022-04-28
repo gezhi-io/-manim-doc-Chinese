@@ -7,7 +7,7 @@ file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p3
 file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingZoomedSceneAround/3957407783_3249930736_4151428894.mp4'
 file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingZoomedSceneAround/3182885708_218522187_2794995783.mp4'
 file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingZoomedSceneAround/1670937671_853853030_5827796.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingZoomedSceneAround/2788623187_218522187_3764601494.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingZoomedSceneAround/250665057_218522187_3764601494.mp4'
 file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingZoomedSceneAround/2792521887_2102144982_2849939156.mp4'
 file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingZoomedSceneAround/2143515155_2303200318_1766620673.mp4'
 file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingZoomedSceneAround/3932036434_218522187_3299030690.mp4'

@@ -10,7 +10,7 @@ if "%SPHINXBUILD%" == "" (
 
 REM The paths are taken from the source directory
 set SOURCEDIR=.
-set BUILDDIR=..\build
+set BUILDDIR=..\docs
 
 if "%1" == "" goto help
 

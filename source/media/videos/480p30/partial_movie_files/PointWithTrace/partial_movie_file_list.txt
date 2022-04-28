@@ -3,4 +3,4 @@ file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p3
 file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PointWithTrace/2903838201_3638504700_1705513847.mp4'
 file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PointWithTrace/2903838201_2550872528_4258127955.mp4'
 file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PointWithTrace/2903838201_3975060139_3008357836.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PointWithTrace/2903838201_3638504700_1173997338.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PointWithTrace/2903838201_3638504700_3131574390.mp4'

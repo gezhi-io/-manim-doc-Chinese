@@ -1,0 +1,1148 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+<meta property="og:title" content="Troubleshooting" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="https://docs.manim.community/installation/troubleshooting.html" />
+  
+<meta property="og:site_name" content="Manim Community | Documentation" />
+  
+<meta property="og:description" content="Version incompatibility: Confusion and conflict between versions are by far the most common reasons for installation failures. Some errors resulting from this are: There are no scenes in that modul..." />
+  
+<meta property="og:image" content="https://www.manim.community/logo.png" />
+  
+<meta property="og:image:alt" content="Manim Community | Documentation" />
+  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Docker" href="docker.html" /><link rel="prev" title="Linux" href="linux.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
+        <title>Troubleshooting - Manim Community v0.15.1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Manim Community v0.15.1</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/manim-logo-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/manim-logo-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Manim Community v0.15.1</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../installation.html">安装</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="windows.html">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="macos.html">MacOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linux.html">Linux</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docker.html">Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/building_blocks.html">Manim’s building blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/a_deeper_look.html">A deeper look</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/using_text.html">Using Text</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">示例库</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.15.1-changelog.html">v0.15.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.15.0-changelog.html">v0.15.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.14.0-changelog.html">v0.14.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.13.1-changelog.html">v0.13.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.13.0-changelog.html">v0.13.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.12.0-changelog.html">v0.12.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.11.0-changelog.html">v0.11.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.10.0-changelog.html">v0.10.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.9.0-changelog.html">v0.9.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.8.0-changelog.html">v0.8.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.7.0-changelog.html">v0.7.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.6.0-changelog.html">v0.6.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.5.0-changelog.html">v0.5.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.4.0-changelog.html">v0.4.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.3.0-changelog.html">v0.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.2.0-changelog.html">v0.2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.1-changelog.html">v0.1.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.animation.Animation.html">Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.animation.Wait.html">Wait</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.changing.html">changing</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.changing.AnimatedBoundary.html">AnimatedBoundary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.changing.TracedPath.html">TracedPath</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.composition.html">composition</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.composition.AnimationGroup.html">AnimationGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.composition.LaggedStart.html">LaggedStart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.composition.LaggedStartMap.html">LaggedStartMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.composition.Succession.html">Succession</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.creation.html">creation</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.creation.AddTextLetterByLetter.html">AddTextLetterByLetter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.creation.AddTextWordByWord.html">AddTextWordByWord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.creation.Create.html">Create</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.creation.DrawBorderThenFill.html">DrawBorderThenFill</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.creation.ShowIncreasingSubsets.html">ShowIncreasingSubsets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.creation.ShowPartial.html">ShowPartial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.creation.ShowSubmobjectsOneByOne.html">ShowSubmobjectsOneByOne</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.creation.Uncreate.html">Uncreate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.creation.Unwrite.html">Unwrite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.creation.Write.html">Write</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.fading.html">fading</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.fading.FadeIn.html">FadeIn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.fading.FadeOut.html">FadeOut</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.growing.html">growing</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.growing.GrowArrow.html">GrowArrow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.growing.GrowFromCenter.html">GrowFromCenter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.growing.GrowFromEdge.html">GrowFromEdge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.growing.GrowFromPoint.html">GrowFromPoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.growing.SpinInFromNothing.html">SpinInFromNothing</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.indication.html">indication</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.indication.ApplyWave.html">ApplyWave</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.indication.Circumscribe.html">Circumscribe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.indication.Flash.html">Flash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.indication.FocusOn.html">FocusOn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.indication.Indicate.html">Indicate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.indication.ShowCreationThenFadeOut.html">ShowCreationThenFadeOut</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.indication.ShowPassingFlash.html">ShowPassingFlash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.indication.ShowPassingFlashWithThinningStrokeWidth.html">ShowPassingFlashWithThinningStrokeWidth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.indication.Wiggle.html">Wiggle</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.movement.html">movement</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.movement.ComplexHomotopy.html">ComplexHomotopy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.movement.Homotopy.html">Homotopy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.movement.MoveAlongPath.html">MoveAlongPath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.movement.PhaseFlow.html">PhaseFlow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.movement.SmoothedVectorizedHomotopy.html">SmoothedVectorizedHomotopy</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.numbers.html">numbers</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.numbers.ChangeDecimalToValue.html">ChangeDecimalToValue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.numbers.ChangingDecimal.html">ChangingDecimal</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.rotation.html">rotation</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.rotation.Rotate.html">Rotate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.rotation.Rotating.html">Rotating</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.specialized.html">specialized</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.specialized.Broadcast.html">Broadcast</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.transform.html">transform</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.ApplyComplexFunction.html">ApplyComplexFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.ApplyFunction.html">ApplyFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.ApplyMatrix.html">ApplyMatrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.ApplyMethod.html">ApplyMethod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.ApplyPointwiseFunction.html">ApplyPointwiseFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.ApplyPointwiseFunctionToCenter.html">ApplyPointwiseFunctionToCenter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.ClockwiseTransform.html">ClockwiseTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.CounterclockwiseTransform.html">CounterclockwiseTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.CyclicReplace.html">CyclicReplace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.FadeToColor.html">FadeToColor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.FadeTransform.html">FadeTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.FadeTransformPieces.html">FadeTransformPieces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.MoveToTarget.html">MoveToTarget</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.ReplacementTransform.html">ReplacementTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.Restore.html">Restore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.ScaleInPlace.html">ScaleInPlace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.ShrinkToCenter.html">ShrinkToCenter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.Swap.html">Swap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.Transform.html">Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.TransformAnimations.html">TransformAnimations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform.TransformFromCopy.html">TransformFromCopy</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.transform_matching_parts.html">transform_matching_parts</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform_matching_parts.TransformMatchingAbstractBase.html">TransformMatchingAbstractBase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform_matching_parts.TransformMatchingShapes.html">TransformMatchingShapes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.transform_matching_parts.TransformMatchingTex.html">TransformMatchingTex</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.updaters.html">updaters</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.updaters.mobject_update_utils.html">mobject_update_utils</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.animation.updaters.update.html">update</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.animation.updaters.update.MaintainPositionRelativeTo.html">MaintainPositionRelativeTo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.animation.updaters.update.UpdateFromAlphaFunc.html">UpdateFromAlphaFunc</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.animation.updaters.update.UpdateFromFunc.html">UpdateFromFunc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/cameras.html">Cameras</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.camera.camera.html">camera</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.camera.camera.BackgroundColoredVMobjectDisplayer.html">BackgroundColoredVMobjectDisplayer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.camera.camera.Camera.html">Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.camera.mapping_camera.html">mapping_camera</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.camera.mapping_camera.MappingCamera.html">MappingCamera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.camera.mapping_camera.OldMultiCamera.html">OldMultiCamera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.camera.mapping_camera.SplitScreenCamera.html">SplitScreenCamera</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.camera.moving_camera.html">moving_camera</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.camera.moving_camera.CameraFrame.html">CameraFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.camera.moving_camera.MovingCamera.html">MovingCamera</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.camera.multi_camera.html">multi_camera</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.camera.multi_camera.MultiCamera.html">MultiCamera</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.camera.three_d_camera.html">three_d_camera</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.camera.three_d_camera.ThreeDCamera.html">ThreeDCamera</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/configuration.html">Configuration</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim._config.html">_config</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim._config.utils.html">utils</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim._config.utils.ManimConfig.html">ManimConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim._config.utils.ManimFrame.html">ManimFrame</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim._config.logger_utils.html">logger_utils</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim._config.logger_utils.JSONFormatter.html">JSONFormatter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/mobjects.html">Mobjects</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.frame.html">frame</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" role="switch" type="checkbox"/><label for="toctree-checkbox-31"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.frame.FullScreenRectangle.html">FullScreenRectangle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.frame.ScreenRectangle.html">ScreenRectangle</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.geometry.html">geometry</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" role="switch" type="checkbox"/><label for="toctree-checkbox-32"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.html">arc</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" role="switch" type="checkbox"/><label for="toctree-checkbox-33"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.AnnotationDot.html">AnnotationDot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.AnnularSector.html">AnnularSector</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.Annulus.html">Annulus</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.Arc.html">Arc</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.ArcBetweenPoints.html">ArcBetweenPoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.ArcPolygon.html">ArcPolygon</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.ArcPolygonFromArcs.html">ArcPolygonFromArcs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.Circle.html">Circle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.CubicBezier.html">CubicBezier</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.CurvedArrow.html">CurvedArrow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.CurvedDoubleArrow.html">CurvedDoubleArrow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.Dot.html">Dot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.Ellipse.html">Ellipse</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.LabeledDot.html">LabeledDot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.Sector.html">Sector</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.arc.TipableVMobject.html">TipableVMobject</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.geometry.boolean_ops.html">boolean_ops</a><input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" role="switch" type="checkbox"/><label for="toctree-checkbox-34"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.boolean_ops.Difference.html">Difference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.boolean_ops.Exclusion.html">Exclusion</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.boolean_ops.Intersection.html">Intersection</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.boolean_ops.Union.html">Union</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.geometry.line.html">line</a><input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" role="switch" type="checkbox"/><label for="toctree-checkbox-35"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.line.Angle.html">Angle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.line.Arrow.html">Arrow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.line.DashedLine.html">DashedLine</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.line.DoubleArrow.html">DoubleArrow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.line.Elbow.html">Elbow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.line.Line.html">Line</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.line.RightAngle.html">RightAngle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.line.TangentLine.html">TangentLine</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.line.Vector.html">Vector</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.html">polygram</a><input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" role="switch" type="checkbox"/><label for="toctree-checkbox-36"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.Cutout.html">Cutout</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.Polygon.html">Polygon</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.Polygram.html">Polygram</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.Rectangle.html">Rectangle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.RegularPolygon.html">RegularPolygon</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.RegularPolygram.html">RegularPolygram</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.RoundedRectangle.html">RoundedRectangle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.Square.html">Square</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.Star.html">Star</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.polygram.Triangle.html">Triangle</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.geometry.shape_matchers.html">shape_matchers</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" role="switch" type="checkbox"/><label for="toctree-checkbox-37"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.shape_matchers.BackgroundRectangle.html">BackgroundRectangle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.shape_matchers.Cross.html">Cross</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.shape_matchers.SurroundingRectangle.html">SurroundingRectangle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.shape_matchers.Underline.html">Underline</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.geometry.tips.html">tips</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" role="switch" type="checkbox"/><label for="toctree-checkbox-38"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.tips.ArrowCircleFilledTip.html">ArrowCircleFilledTip</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.tips.ArrowCircleTip.html">ArrowCircleTip</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.tips.ArrowSquareFilledTip.html">ArrowSquareFilledTip</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.tips.ArrowSquareTip.html">ArrowSquareTip</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.tips.ArrowTip.html">ArrowTip</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.tips.ArrowTriangleFilledTip.html">ArrowTriangleFilledTip</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.geometry.tips.ArrowTriangleTip.html">ArrowTriangleTip</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.graph.html">graph</a><input class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" role="switch" type="checkbox"/><label for="toctree-checkbox-39"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.graph.Graph.html">Graph</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.graphing.html">graphing</a><input class="toctree-checkbox" id="toctree-checkbox-40" name="toctree-checkbox-40" role="switch" type="checkbox"/><label for="toctree-checkbox-40"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.graphing.coordinate_systems.html">coordinate_systems</a><input class="toctree-checkbox" id="toctree-checkbox-41" name="toctree-checkbox-41" role="switch" type="checkbox"/><label for="toctree-checkbox-41"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.coordinate_systems.Axes.html">Axes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.coordinate_systems.ComplexPlane.html">ComplexPlane</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.coordinate_systems.CoordinateSystem.html">CoordinateSystem</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.coordinate_systems.NumberPlane.html">NumberPlane</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.coordinate_systems.PolarPlane.html">PolarPlane</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.coordinate_systems.ThreeDAxes.html">ThreeDAxes</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.graphing.functions.html">functions</a><input class="toctree-checkbox" id="toctree-checkbox-42" name="toctree-checkbox-42" role="switch" type="checkbox"/><label for="toctree-checkbox-42"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.functions.FunctionGraph.html">FunctionGraph</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.functions.ImplicitFunction.html">ImplicitFunction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.functions.ParametricFunction.html">ParametricFunction</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.graphing.number_line.html">number_line</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" role="switch" type="checkbox"/><label for="toctree-checkbox-43"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.number_line.NumberLine.html">NumberLine</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.number_line.UnitInterval.html">UnitInterval</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.graphing.probability.html">probability</a><input class="toctree-checkbox" id="toctree-checkbox-44" name="toctree-checkbox-44" role="switch" type="checkbox"/><label for="toctree-checkbox-44"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.probability.BarChart.html">BarChart</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.probability.SampleSpace.html">SampleSpace</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.graphing.scale.html">scale</a><input class="toctree-checkbox" id="toctree-checkbox-45" name="toctree-checkbox-45" role="switch" type="checkbox"/><label for="toctree-checkbox-45"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.scale.LinearBase.html">LinearBase</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.graphing.scale.LogBase.html">LogBase</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.logo.html">logo</a><input class="toctree-checkbox" id="toctree-checkbox-46" name="toctree-checkbox-46" role="switch" type="checkbox"/><label for="toctree-checkbox-46"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.logo.ManimBanner.html">ManimBanner</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.matrix.html">matrix</a><input class="toctree-checkbox" id="toctree-checkbox-47" name="toctree-checkbox-47" role="switch" type="checkbox"/><label for="toctree-checkbox-47"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.matrix.DecimalMatrix.html">DecimalMatrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.matrix.IntegerMatrix.html">IntegerMatrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.matrix.Matrix.html">Matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.matrix.MobjectMatrix.html">MobjectMatrix</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.mobject.html">mobject</a><input class="toctree-checkbox" id="toctree-checkbox-48" name="toctree-checkbox-48" role="switch" type="checkbox"/><label for="toctree-checkbox-48"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.mobject.Group.html">Group</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.mobject.Mobject.html">Mobject</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.svg.html">svg</a><input class="toctree-checkbox" id="toctree-checkbox-49" name="toctree-checkbox-49" role="switch" type="checkbox"/><label for="toctree-checkbox-49"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.svg.brace.html">brace</a><input class="toctree-checkbox" id="toctree-checkbox-50" name="toctree-checkbox-50" role="switch" type="checkbox"/><label for="toctree-checkbox-50"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.svg.brace.ArcBrace.html">ArcBrace</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.svg.brace.Brace.html">Brace</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.svg.brace.BraceBetweenPoints.html">BraceBetweenPoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.svg.brace.BraceLabel.html">BraceLabel</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.svg.brace.BraceText.html">BraceText</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.svg.style_utils.html">style_utils</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.svg.svg_mobject.html">svg_mobject</a><input class="toctree-checkbox" id="toctree-checkbox-51" name="toctree-checkbox-51" role="switch" type="checkbox"/><label for="toctree-checkbox-51"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.svg.svg_mobject.SVGMobject.html">SVGMobject</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.svg.svg_path.html">svg_path</a><input class="toctree-checkbox" id="toctree-checkbox-52" name="toctree-checkbox-52" role="switch" type="checkbox"/><label for="toctree-checkbox-52"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.svg.svg_path.SVGPathMobject.html">SVGPathMobject</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.table.html">table</a><input class="toctree-checkbox" id="toctree-checkbox-53" name="toctree-checkbox-53" role="switch" type="checkbox"/><label for="toctree-checkbox-53"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.table.DecimalTable.html">DecimalTable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.table.IntegerTable.html">IntegerTable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.table.MathTable.html">MathTable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.table.MobjectTable.html">MobjectTable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.table.Table.html">Table</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.text.html">text</a><input class="toctree-checkbox" id="toctree-checkbox-54" name="toctree-checkbox-54" role="switch" type="checkbox"/><label for="toctree-checkbox-54"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.text.code_mobject.html">code_mobject</a><input class="toctree-checkbox" id="toctree-checkbox-55" name="toctree-checkbox-55" role="switch" type="checkbox"/><label for="toctree-checkbox-55"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.code_mobject.Code.html">Code</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.text.numbers.html">numbers</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.numbers.DecimalNumber.html">DecimalNumber</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.numbers.Integer.html">Integer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.numbers.Variable.html">Variable</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.text.tex_mobject.html">tex_mobject</a><input class="toctree-checkbox" id="toctree-checkbox-57" name="toctree-checkbox-57" role="switch" type="checkbox"/><label for="toctree-checkbox-57"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.tex_mobject.BulletedList.html">BulletedList</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.tex_mobject.MathTex.html">MathTex</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.tex_mobject.SingleStringMathTex.html">SingleStringMathTex</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.tex_mobject.Tex.html">Tex</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.tex_mobject.TexSymbol.html">TexSymbol</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.tex_mobject.Title.html">Title</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.text.text_mobject.html">text_mobject</a><input class="toctree-checkbox" id="toctree-checkbox-58" name="toctree-checkbox-58" role="switch" type="checkbox"/><label for="toctree-checkbox-58"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.text_mobject.MarkupText.html">MarkupText</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.text_mobject.Paragraph.html">Paragraph</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.text.text_mobject.Text.html">Text</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.three_d.html">three_d</a><input class="toctree-checkbox" id="toctree-checkbox-59" name="toctree-checkbox-59" role="switch" type="checkbox"/><label for="toctree-checkbox-59"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.three_d.polyhedra.html">polyhedra</a><input class="toctree-checkbox" id="toctree-checkbox-60" name="toctree-checkbox-60" role="switch" type="checkbox"/><label for="toctree-checkbox-60"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.polyhedra.Dodecahedron.html">Dodecahedron</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.polyhedra.Icosahedron.html">Icosahedron</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.polyhedra.Octahedron.html">Octahedron</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.polyhedra.Polyhedron.html">Polyhedron</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.polyhedra.Tetrahedron.html">Tetrahedron</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.three_d.three_d_utils.html">three_d_utils</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.html">three_dimensions</a><input class="toctree-checkbox" id="toctree-checkbox-61" name="toctree-checkbox-61" role="switch" type="checkbox"/><label for="toctree-checkbox-61"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.Arrow3D.html">Arrow3D</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.Cone.html">Cone</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.Cube.html">Cube</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.Cylinder.html">Cylinder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.Dot3D.html">Dot3D</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.Line3D.html">Line3D</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.Prism.html">Prism</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.Sphere.html">Sphere</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.Surface.html">Surface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.ThreeDVMobject.html">ThreeDVMobject</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.three_d.three_dimensions.Torus.html">Torus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.types.html">types</a><input class="toctree-checkbox" id="toctree-checkbox-62" name="toctree-checkbox-62" role="switch" type="checkbox"/><label for="toctree-checkbox-62"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.types.image_mobject.html">image_mobject</a><input class="toctree-checkbox" id="toctree-checkbox-63" name="toctree-checkbox-63" role="switch" type="checkbox"/><label for="toctree-checkbox-63"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.image_mobject.AbstractImageMobject.html">AbstractImageMobject</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.image_mobject.ImageMobject.html">ImageMobject</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.image_mobject.ImageMobjectFromCamera.html">ImageMobjectFromCamera</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.types.point_cloud_mobject.html">point_cloud_mobject</a><input class="toctree-checkbox" id="toctree-checkbox-64" name="toctree-checkbox-64" role="switch" type="checkbox"/><label for="toctree-checkbox-64"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.point_cloud_mobject.Mobject1D.html">Mobject1D</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.point_cloud_mobject.Mobject2D.html">Mobject2D</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.point_cloud_mobject.PGroup.html">PGroup</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.point_cloud_mobject.PMobject.html">PMobject</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.point_cloud_mobject.Point.html">Point</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.point_cloud_mobject.PointCloudDot.html">PointCloudDot</a></li>
+</ul>
+</li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../reference/manim.mobject.types.vectorized_mobject.html">vectorized_mobject</a><input class="toctree-checkbox" id="toctree-checkbox-65" name="toctree-checkbox-65" role="switch" type="checkbox"/><label for="toctree-checkbox-65"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.vectorized_mobject.CurvesAsSubmobjects.html">CurvesAsSubmobjects</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.vectorized_mobject.DashedVMobject.html">DashedVMobject</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.vectorized_mobject.VDict.html">VDict</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.vectorized_mobject.VGroup.html">VGroup</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.vectorized_mobject.VMobject.html">VMobject</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../reference/manim.mobject.types.vectorized_mobject.VectorizedPoint.html">VectorizedPoint</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.value_tracker.html">value_tracker</a><input class="toctree-checkbox" id="toctree-checkbox-66" name="toctree-checkbox-66" role="switch" type="checkbox"/><label for="toctree-checkbox-66"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.value_tracker.ComplexValueTracker.html">ComplexValueTracker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.value_tracker.ValueTracker.html">ValueTracker</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.mobject.vector_field.html">vector_field</a><input class="toctree-checkbox" id="toctree-checkbox-67" name="toctree-checkbox-67" role="switch" type="checkbox"/><label for="toctree-checkbox-67"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.vector_field.ArrowVectorField.html">ArrowVectorField</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.vector_field.StreamLines.html">StreamLines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.mobject.vector_field.VectorField.html">VectorField</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/scenes.html">Scenes</a><input class="toctree-checkbox" id="toctree-checkbox-68" name="toctree-checkbox-68" role="switch" type="checkbox"/><label for="toctree-checkbox-68"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.scene.moving_camera_scene.html">moving_camera_scene</a><input class="toctree-checkbox" id="toctree-checkbox-69" name="toctree-checkbox-69" role="switch" type="checkbox"/><label for="toctree-checkbox-69"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.moving_camera_scene.MovingCameraScene.html">MovingCameraScene</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.scene.section.html">section</a><input class="toctree-checkbox" id="toctree-checkbox-70" name="toctree-checkbox-70" role="switch" type="checkbox"/><label for="toctree-checkbox-70"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.section.DefaultSectionType.html">DefaultSectionType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.section.Section.html">Section</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.scene.scene.html">scene</a><input class="toctree-checkbox" id="toctree-checkbox-71" name="toctree-checkbox-71" role="switch" type="checkbox"/><label for="toctree-checkbox-71"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.scene.RerunSceneHandler.html">RerunSceneHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.scene.Scene.html">Scene</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.scene.scene_file_writer.html">scene_file_writer</a><input class="toctree-checkbox" id="toctree-checkbox-72" name="toctree-checkbox-72" role="switch" type="checkbox"/><label for="toctree-checkbox-72"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.scene_file_writer.SceneFileWriter.html">SceneFileWriter</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.scene.three_d_scene.html">three_d_scene</a><input class="toctree-checkbox" id="toctree-checkbox-73" name="toctree-checkbox-73" role="switch" type="checkbox"/><label for="toctree-checkbox-73"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.three_d_scene.SpecialThreeDScene.html">SpecialThreeDScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.three_d_scene.ThreeDScene.html">ThreeDScene</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.scene.vector_space_scene.html">vector_space_scene</a><input class="toctree-checkbox" id="toctree-checkbox-74" name="toctree-checkbox-74" role="switch" type="checkbox"/><label for="toctree-checkbox-74"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.vector_space_scene.LinearTransformationScene.html">LinearTransformationScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.vector_space_scene.VectorScene.html">VectorScene</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.scene.zoomed_scene.html">zoomed_scene</a><input class="toctree-checkbox" id="toctree-checkbox-75" name="toctree-checkbox-75" role="switch" type="checkbox"/><label for="toctree-checkbox-75"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.scene.zoomed_scene.ZoomedScene.html">ZoomedScene</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/utilities_misc.html">Utilities and other modules</a><input class="toctree-checkbox" id="toctree-checkbox-76" name="toctree-checkbox-76" role="switch" type="checkbox"/><label for="toctree-checkbox-76"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.constants.html">constants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.bezier.html">bezier</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.utils.color.html">color</a><input class="toctree-checkbox" id="toctree-checkbox-77" name="toctree-checkbox-77" role="switch" type="checkbox"/><label for="toctree-checkbox-77"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.utils.color.Colors.html">Colors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.commands.html">commands</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.utils.config_ops.html">config_ops</a><input class="toctree-checkbox" id="toctree-checkbox-78" name="toctree-checkbox-78" role="switch" type="checkbox"/><label for="toctree-checkbox-78"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.utils.config_ops.DictAsObject.html">DictAsObject</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.deprecation.html">deprecation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.debug.html">debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.hashing.html">hashing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.ipython_magic.html">ipython_magic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.images.html">images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.iterables.html">iterables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.paths.html">paths</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.rate_functions.html">rate_functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.simple_functions.html">simple_functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.sounds.html">sounds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.space_ops.html">space_ops</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.utils.tex.html">tex</a><input class="toctree-checkbox" id="toctree-checkbox-79" name="toctree-checkbox-79" role="switch" type="checkbox"/><label for="toctree-checkbox-79"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.utils.tex.TexTemplate.html">TexTemplate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.utils.tex.TexTemplateFromFile.html">TexTemplateFromFile</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.utils.tex_templates.html">tex_templates</a><input class="toctree-checkbox" id="toctree-checkbox-80" name="toctree-checkbox-80" role="switch" type="checkbox"/><label for="toctree-checkbox-80"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.utils.tex_templates.TexFontTemplates.html">TexFontTemplates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.utils.tex_templates.TexTemplateLibrary.html">TexTemplateLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/manim.utils.tex_file_writing.html">tex_file_writing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.utils.docbuild.manim_directive.html">manim_directive</a><input class="toctree-checkbox" id="toctree-checkbox-83" name="toctree-checkbox-83" role="switch" type="checkbox"/><label for="toctree-checkbox-83"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.utils.docbuild.manim_directive.ManimDirective.html">ManimDirective</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/manim.utils.docbuild.manim_directive.skip_manim_node.html">skip_manim_node</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/docstrings.html">Adding Docstrings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/references.html">Adding References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/examples.html">Adding Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/typings.html">Adding Typings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/admonitions.html">Adding Admonitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/testing.html">Adding Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/performance.html">Improving performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/internationalization.html">Internationalization</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container"><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="troubleshooting">
+<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h1>
+<section id="version-incompatibility">
+<h2>Version incompatibility<a class="headerlink" href="#version-incompatibility" title="Permalink to this headline">#</a></h2>
+<p>Confusion and conflict between versions are by far the most common reasons
+for installation failures. Some errors resulting from this are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">There</span> <span class="pre">are</span> <span class="pre">no</span> <span class="pre">scenes</span> <span class="pre">in</span> <span class="pre">that</span> <span class="pre">module</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ModuleNotFoundError:</span> <span class="pre">No</span> <span class="pre">module</span> <span class="pre">named</span> <span class="pre">'manim'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ModuleNotFoundError:</span> <span class="pre">No</span> <span class="pre">module</span> <span class="pre">named</span> <span class="pre">'manimlib'</span></code></p></li>
+</ul>
+<p>Some reasons that conflict may occur are:</p>
+<ul class="simple">
+<li><p>You followed any tutorial created before October 2020 (because the community edition did not exist before then)</p></li>
+<li><p>You cloned a repository on GitHub (installation of the community version for normal use does not require the cloning of any repository)</p></li>
+<li><p>Different import statements (explained below)</p></li>
+<li><p>You used documentation for multiple versions (such as the readme for 3b1b/manim and this documentation)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As this is the documentation for the community version, we can
+only help with the installation of this library. If you would like to
+install other versions of manim, please refer to their documentation.</p>
+</div>
+<section id="identifying-files-written-for-a-different-version-of-manim">
+<h3>Identifying files written for a different version of manim<a class="headerlink" href="#identifying-files-written-for-a-different-version-of-manim" title="Permalink to this headline">#</a></h3>
+<p>There are some distinctive features of different versions of manim that
+can help in identifying what version of manim files are written for:</p>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 23%"/>
+<col style="width: 26%"/>
+<col style="width: 38%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p>ManimCE (this version)</p></th>
+<th class="head"><p>ManimGL</p></th>
+<th class="head"><p>ManimCairo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Import
+statement</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">manim</span> <span class="pre">import</span> <span class="pre">*</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">manimlib</span> <span class="pre">import</span> <span class="pre">*</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">manimlib.imports</span> <span class="pre">import</span> <span class="pre">*</span></code></p></td>
+</tr>
+</tbody>
+</table></div>
+<p>If you are a beginner, you should only attempt to run files written for
+your version. Files written for a different version of manim will
+generally not work without some modification.</p>
+</section>
+<section id="identifying-the-version-you-are-running">
+<h3>Identifying the version you are running<a class="headerlink" href="#identifying-the-version-you-are-running" title="Permalink to this headline">#</a></h3>
+<p>The community edition of manim should always state <cite>Manim Community &lt;version_number&gt;</cite>
+as its first line of any command you run.</p>
+</section>
+<section id="identifying-and-removing-conflicting-versions-of-manim">
+<h3>Identifying and removing conflicting versions of manim<a class="headerlink" href="#identifying-and-removing-conflicting-versions-of-manim" title="Permalink to this headline">#</a></h3>
+<p>Within the system or environment you are using to run manim, run the
+following command in the terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip list
+</pre></div>
+</div>
+<p>The correct package for the community edition is simply <code class="docutils literal notranslate"><span class="pre">manim</span></code>. If
+you do not see this package listed, please refer back to our
+installation guide to install it. If you see <code class="docutils literal notranslate"><span class="pre">manimlib</span></code> or <code class="docutils literal notranslate"><span class="pre">manimce</span></code>
+(actually an old version of the community edition), you should remove
+them with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip uninstall &lt;package&gt;
+</pre></div>
+</div>
+<p>If you cloned manim from GitHub, you should either remove it
+or run manim outside that folder.</p>
+</section>
+</section>
+<section id="other-errors">
+<h2>Other errors<a class="headerlink" href="#other-errors" title="Permalink to this headline">#</a></h2>
+<section id="pip-install-manim-fails-when-installing-manimpango">
+<h3><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">manim</span></code> fails when installing manimpango?<a class="headerlink" href="#pip-install-manim-fails-when-installing-manimpango" title="Permalink to this headline">#</a></h3>
+<p>This most likely means that pip was not able to use our pre-built wheels
+of <code class="docutils literal notranslate"><span class="pre">manimpango</span></code>. Let us know (via our <a class="reference external" href="https://www.manim.community/discord/">Discord</a>
+or by opening a
+<a class="reference external" href="https://github.com/ManimCommunity/ManimPango/issues/new">new issue on GitHub</a>)
+which architecture you would like to see supported, and we’ll see what we
+can do about it.</p>
+<p>To fix errors when installing <code class="docutils literal notranslate"><span class="pre">manimpango</span></code>, you need to make sure you
+have all the necessary build requirements. Check out the detailed
+instructions given in
+<a class="reference external" href="https://github.com/ManimCommunity/ManimPango#BUILDING">the BUILDING section</a>
+of the corresponding <a class="reference external" href="https://github.com/ManimCommunity/ManimPango">GitHub repository</a>.</p>
+</section>
+<section id="windows-oserror-dlopen-failed-to-load-a-library-pango">
+<h3>(Windows) OSError: dlopen() failed to load a library: pango<a class="headerlink" href="#windows-oserror-dlopen-failed-to-load-a-library-pango" title="Permalink to this headline">#</a></h3>
+<p>This should be fixed in Manim’s latest version, update
+using <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">manim</span></code>.</p>
+</section>
+<section id="some-letters-are-missing-from-text-tex-output">
+<h3>Some letters are missing from Text/Tex output<a class="headerlink" href="#some-letters-are-missing-from-text-tex-output" title="Permalink to this headline">#</a></h3>
+<p>If you have recently installed TeX you may need to build the fonts it
+uses. This can be done by running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fmtutil -sys --all
+</pre></div>
+</div>
+</section>
+<section id="installation-does-not-support-converting-pdf-to-svg">
+<span id="dvisvgm-troubleshoot"></span><h3>Installation does not support converting PDF to SVG<a class="headerlink" href="#installation-does-not-support-converting-pdf-to-svg" title="Permalink to this headline">#</a></h3>
+<p>First, make sure your <code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code> version is at least 2.4:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>dvisvgm --version
+</pre></div>
+</div>
+<p>If you do not know how to update <code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code>, please refer to your operating system’s documentation.</p>
+<p>Second, check whether your <code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code> supports PostScript specials. This is
+needed to convert from PDF to SVG.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>dvisvgm -l
+</pre></div>
+</div>
+<p>If the output to this command does <strong>not</strong> contain <code class="docutils literal notranslate"><span class="pre">ps</span>  <span class="pre">dvips</span> <span class="pre">PostScript</span> <span class="pre">specials</span></code>,
+this is a bad sign. In this case, run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>dvisvgm -h
+</pre></div>
+</div>
+<p>If the output does <strong>not</strong> contain <code class="docutils literal notranslate"><span class="pre">--libgs=filename</span></code>, this means your
+<code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code> does not currently support PostScript. You must get another binary.</p>
+<p>If, however, <code class="docutils literal notranslate"><span class="pre">--libgs=filename</span></code> appears in the help, that means that your
+<code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code> needs the Ghostscript library to support PostScript. Search for
+<code class="docutils literal notranslate"><span class="pre">libgs.so</span></code> (on Linux, probably in <code class="docutils literal notranslate"><span class="pre">/usr/local/lib</span></code> or <code class="docutils literal notranslate"><span class="pre">/usr/lib</span></code>) or
+<code class="docutils literal notranslate"><span class="pre">gsdll32.dll</span></code> (on 32-bit Windows, probably in <code class="docutils literal notranslate"><span class="pre">C:\windows\system32</span></code>) or
+<code class="docutils literal notranslate"><span class="pre">gsdll64.dll</span></code> (on 64-bit Windows, probably in <code class="docutils literal notranslate"><span class="pre">c:\windows\system32</span></code> – yes
+32) or <code class="docutils literal notranslate"><span class="pre">libgsl.dylib</span></code> (on Mac OS, probably in <code class="docutils literal notranslate"><span class="pre">/usr/local/lib</span></code> or
+<code class="docutils literal notranslate"><span class="pre">/opt/local/lib</span></code>). Please look carefully, as the file might be located
+elsewhere, e.g. in the directory where Ghostscript is installed.</p>
+<p>When you have found the library, try (on Mac OS or Linux)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">LIBGS</span><span class="o">=</span>&lt;path to your library including the file name&gt;
+dvisvgm -l
+</pre></div>
+</div>
+<p>or (on Windows)</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">LIBGS</span><span class="p">=&lt;</span>path to your library including the file name&gt;
+dvisvgm -l
+</pre></div>
+</div>
+<p>You should now see <code class="docutils literal notranslate"><span class="pre">ps</span>    <span class="pre">dvips</span> <span class="pre">PostScript</span> <span class="pre">specials</span></code> in the output. Refer to
+your operating system’s documentation to find out how you can set or export the
+environment variable <code class="docutils literal notranslate"><span class="pre">LIBGS</span></code> automatically whenever you open a shell.</p>
+<p>As a last check, you can run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>dvisvgm -V1
+</pre></div>
+</div>
+<p>(while still having <code class="docutils literal notranslate"><span class="pre">LIBGS</span></code> set to the correct path, of course.) If <code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code>
+can find your Ghostscript installation, it will be shown in the output together
+with the version number.</p>
+<p>If you do not have the necessary library on your system, please refer to your
+operating system’s documentation to find out where you can get it and how you
+have to install it.</p>
+<p>If you are unable to solve your problem, check out the <a class="reference external" href="https://dvisvgm.de/FAQ/">dvisvgm FAQ</a>.</p>
+</section>
+<section id="windows-python-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file">
+<h3>(Windows) <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">recognized</span> <span class="pre">as</span> <span class="pre">an</span> <span class="pre">internal</span> <span class="pre">or</span> <span class="pre">external</span> <span class="pre">command,</span> <span class="pre">operable</span> <span class="pre">program</span> <span class="pre">or</span> <span class="pre">batch</span> <span class="pre">file.</span></code><a class="headerlink" href="#windows-python-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file" title="Permalink to this headline">#</a></h3>
+<p>To fix this, you need to add the Python executable to your <code class="docutils literal notranslate"><span class="pre">PATH</span></code> environment variable.
+Follow the steps in <a class="reference external" href="https://superuser.com/questions/143119/how-do-i-add-python-to-the-windows-path/143121#143121">this StackExchange answer</a>.</p>
+</section>
+<section id="choco-install-manimce-failed">
+<h3><code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">manimce</span></code> failed<a class="headerlink" href="#choco-install-manimce-failed" title="Permalink to this headline">#</a></h3>
+<p>If <code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">manimce</span></code> failed,
+it is likely because Python was not added to your <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable properly.
+Try running the following commands in your terminal:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">--version</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">py3</span> <span class="pre">--version</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">--version</span></code></p></li>
+</ol>
+<p>Minimally, <code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">--version</span></code> and <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code> should return a version.
+If none of these commands are recognized,
+this means that Python was installed on your system, but was not added to PATH.
+See above for directions to add it to your PATH variable.</p>
+<p>If any of these commands open the Windows store,
+this is likely interfering with the process.
+See below to fix aliases.</p>
+</section>
+<section id="windows-fix-aliases">
+<h3>(Windows) Fix Aliases<a class="headerlink" href="#windows-fix-aliases" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p>Go to the Windows Settings.</p></li>
+<li><p>Under Apps and Features, there are application execution aliases.</p></li>
+<li><p>Within this menu disable the alias(es) that are causing the issue (<code class="docutils literal notranslate"><span class="pre">python</span></code> and/or <code class="docutils literal notranslate"><span class="pre">python3</span></code>).</p></li>
+</ol>
+</section>
+<section id="indexerror-list-index-out-of-range">
+<h3><code class="docutils literal notranslate"><span class="pre">IndexError:</span> <span class="pre">List</span> <span class="pre">index</span> <span class="pre">out</span> <span class="pre">of</span> <span class="pre">range</span></code><a class="headerlink" href="#indexerror-list-index-out-of-range" title="Permalink to this headline">#</a></h3>
+<p>Did you install LaTeX using MiKTeX? If so, open the MiKTeX console,
+install the <code class="docutils literal notranslate"><span class="pre">cm-super</span></code> package, then delete the <code class="docutils literal notranslate"><span class="pre">media</span></code> directory and
+try to render the scene again.</p>
+</section>
+<section id="config">
+<h3>Config<a class="headerlink" href="#config" title="Permalink to this headline">#</a></h3>
+<p>We’ve dropped the use of CONFIG in the
+Community Version <a class="reference internal" href="../changelog/0.2.0-changelog.html"><span class="doc">version 0.2.0</span></a>, released in January 2021.
+This means parameters that were previously specified in the
+CONFIG dictionary should now be passed directly into the constructor.
+Practically, this means that old constructions like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SomeMobject</span><span class="p">(</span><span class="n">Thing</span><span class="p">):</span>
+    <span class="n">CONFIG</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"stroke_color"</span><span class="p">:</span> <span class="n">RED</span><span class="p">,</span>
+        <span class="s2">"fill_opacity"</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+        <span class="s2">"radius"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="s2">"my_awesome_property"</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="c1"># add methods here</span>
+</pre></div>
+</div>
+<p>should now be defined like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SomeMobject</span><span class="p">(</span><span class="n">VMobject</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">stroke_color</span><span class="o">=</span><span class="n">RED</span><span class="p">,</span>
+        <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+        <span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="n">my_awesome_property</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">my_awesome_property</span> <span class="o">=</span> <span class="mi">42</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">stroke_color</span><span class="o">=</span><span class="n">stroke_color</span><span class="p">,</span> <span class="n">fill_opacity</span><span class="o">=</span><span class="n">fill_opacity</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
+        <span class="p">)</span>  <span class="c1"># passing arguments into the parent class</span>
+        <span class="c1"># add methods here</span>
+</pre></div>
+</div>
+<p>For scenes, this is even easier:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Test</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="n">CONFIG</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"a"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>becomes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Test</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</section>
+<section id="a-python-command-does-not-work">
+<h3>A python command does not work<a class="headerlink" href="#a-python-command-does-not-work" title="Permalink to this headline">#</a></h3>
+<p>If a python command does not work,
+try adding <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span></code>  in front of it.
+For example, if <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">manim</span></code> does not work, you can try <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">manim</span></code>.</p>
+</section>
+<section id="undefined-symbol">
+<h3>undefined symbol<a class="headerlink" href="#undefined-symbol" title="Permalink to this headline">#</a></h3>
+<p>If you are using anaconda, run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge pycairo
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="docker.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Docker</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="linux.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Linux</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2022, The Manim Community Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Troubleshooting</a><ul>
+<li><a class="reference internal" href="#version-incompatibility">Version incompatibility</a><ul>
+<li><a class="reference internal" href="#identifying-files-written-for-a-different-version-of-manim">Identifying files written for a different version of manim</a></li>
+<li><a class="reference internal" href="#identifying-the-version-you-are-running">Identifying the version you are running</a></li>
+<li><a class="reference internal" href="#identifying-and-removing-conflicting-versions-of-manim">Identifying and removing conflicting versions of manim</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#other-errors">Other errors</a><ul>
+<li><a class="reference internal" href="#pip-install-manim-fails-when-installing-manimpango"><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">manim</span></code> fails when installing manimpango?</a></li>
+<li><a class="reference internal" href="#windows-oserror-dlopen-failed-to-load-a-library-pango">(Windows) OSError: dlopen() failed to load a library: pango</a></li>
+<li><a class="reference internal" href="#some-letters-are-missing-from-text-tex-output">Some letters are missing from Text/Tex output</a></li>
+<li><a class="reference internal" href="#installation-does-not-support-converting-pdf-to-svg">Installation does not support converting PDF to SVG</a></li>
+<li><a class="reference internal" href="#windows-python-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file">(Windows) <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">recognized</span> <span class="pre">as</span> <span class="pre">an</span> <span class="pre">internal</span> <span class="pre">or</span> <span class="pre">external</span> <span class="pre">command,</span> <span class="pre">operable</span> <span class="pre">program</span> <span class="pre">or</span> <span class="pre">batch</span> <span class="pre">file.</span></code></a></li>
+<li><a class="reference internal" href="#choco-install-manimce-failed"><code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">manimce</span></code> failed</a></li>
+<li><a class="reference internal" href="#windows-fix-aliases">(Windows) Fix Aliases</a></li>
+<li><a class="reference internal" href="#indexerror-list-index-out-of-range"><code class="docutils literal notranslate"><span class="pre">IndexError:</span> <span class="pre">List</span> <span class="pre">index</span> <span class="pre">out</span> <span class="pre">of</span> <span class="pre">range</span></code></a></li>
+<li><a class="reference internal" href="#config">Config</a></li>
+<li><a class="reference internal" href="#a-python-command-does-not-work">A python command does not work</a></li>
+<li><a class="reference internal" href="#undefined-symbol">undefined symbol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/responsiveSvg.js"></script>
+    </body>
+</html>

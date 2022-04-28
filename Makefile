@@ -8,7 +8,7 @@ SPHINXBUILD   ?= sphinx-build
 
 # Path base is the source directory
 SOURCEDIR     = .
-BUILDDIR      = ../build
+BUILDDIR      = ../docs
 
 # Put it first so that "make" without argument is like "make help".
 help:
