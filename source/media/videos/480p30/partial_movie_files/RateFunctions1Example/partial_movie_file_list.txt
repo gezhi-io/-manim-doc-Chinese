@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/RateFunctions1Example/1079597619_2964120000_223132457.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/RateFunctions1Example/2903838201_3131366309_3573806495.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/RateFunctions1Example/2903838201_3638504700_11119854.mp4'

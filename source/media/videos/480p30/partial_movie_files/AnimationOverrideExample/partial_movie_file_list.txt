@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimationOverrideExample/1079597619_2673652919_223132457.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimationOverrideExample/2903838201_2124446601_3576798882.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/AnimationOverrideExample/2903838201_3638504700_635550872.mp4'

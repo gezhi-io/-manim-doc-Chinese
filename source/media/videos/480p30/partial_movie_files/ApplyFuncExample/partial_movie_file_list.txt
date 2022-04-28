@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ApplyFuncExample/1079597619_751070432_1077740267.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ApplyFuncExample/2903838201_1774101824_2580475461.mp4'

@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ComplexValueTrackerExample/1079597619_1227284596_3876698566.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ComplexValueTrackerExample/2903838201_1144128483_2397965925.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ComplexValueTrackerExample/2903838201_2157155245_3645722950.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ComplexValueTrackerExample/2903838201_3641383154_2416930819.mp4'

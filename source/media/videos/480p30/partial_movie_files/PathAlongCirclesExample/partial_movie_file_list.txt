@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PathAlongCirclesExample/1079597619_2061229911_4149341242.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PathAlongCirclesExample/2903838201_1855392748_2826988490.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PathAlongCirclesExample/2903838201_3808450660_878283000.mp4'

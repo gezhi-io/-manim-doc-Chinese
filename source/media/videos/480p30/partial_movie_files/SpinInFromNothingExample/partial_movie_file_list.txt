@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SpinInFromNothingExample/1079597619_1934096605_223132457.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SpinInFromNothingExample/2903838201_1952898094_1906613240.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SpinInFromNothingExample/2903838201_2635631504_2945272084.mp4'

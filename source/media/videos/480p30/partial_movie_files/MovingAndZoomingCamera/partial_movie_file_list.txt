@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingAndZoomingCamera/2381940195_3530258413_3989506331.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingAndZoomingCamera/3742684899_3105491222_3734066537.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingAndZoomingCamera/1803258315_3730998137_1367315565.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MovingAndZoomingCamera/2751488394_3730998137_1367315565.mp4'

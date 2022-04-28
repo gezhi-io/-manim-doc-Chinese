@@ -1,0 +1,33 @@
+ManimMagic
+==========
+
+Qualified name: ``manim.utils.ipython\_magic.ManimMagic``
+
+.. currentmodule:: manim.utils.ipython_magic
+
+.. autoclass:: ManimMagic
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~ManimMagic.add_additional_args
+      ~ManimMagic.manim
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~ManimMagic.config
+     ~ManimMagic.cross_validation_lock
+     ~ManimMagic.magics
+     ~ManimMagic.options_table
+     ~ManimMagic.parent
+     ~ManimMagic.registered
+     ~ManimMagic.shell
+   

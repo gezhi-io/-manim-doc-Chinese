@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ChangingCameraWidthAndRestore/2103493613_2938936015_844536138.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ChangingCameraWidthAndRestore/1750950724_3105491222_1092034956.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ChangingCameraWidthAndRestore/1750950724_2569967788_324844064.mp4'

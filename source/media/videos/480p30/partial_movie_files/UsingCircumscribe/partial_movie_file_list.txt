@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/UsingCircumscribe/1079597619_544751576_2141980902.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/UsingCircumscribe/2903838201_381256965_3366776669.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/UsingCircumscribe/2903838201_904560571_3917647747.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/UsingCircumscribe/2903838201_2199584792_3917647747.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/UsingCircumscribe/2903838201_2335211922_3770955357.mp4'

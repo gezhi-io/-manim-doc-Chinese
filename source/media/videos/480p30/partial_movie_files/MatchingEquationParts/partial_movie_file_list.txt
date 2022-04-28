@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MatchingEquationParts/1079597619_2564541212_4159644138.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MatchingEquationParts/2903838201_3564950357_230770454.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MatchingEquationParts/2903838201_1521895037_1774556201.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MatchingEquationParts/2903838201_719617608_381359313.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/MatchingEquationParts/2903838201_1521895037_2549951087.mp4'

@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SineCurveUnitCircle/1079597619_988297415_2094478755.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SineCurveUnitCircle/2903838201_3638504700_4173775568.mp4'

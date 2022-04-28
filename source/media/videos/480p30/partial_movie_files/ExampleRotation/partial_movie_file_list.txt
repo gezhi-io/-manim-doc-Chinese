@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ExampleRotation/2039217748_3450863737_2422900464.mp4'
