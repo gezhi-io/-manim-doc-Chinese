@@ -1,4 +1,4 @@
 # This file is used internally by FFMPEG.
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SpiralPathExample/1079597619_2061229911_1171284362.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SpiralPathExample/2903838201_3257509833_2365264515.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SpiralPathExample/2903838201_3808450660_2454583204.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SpiralPathExample/1079597619_2061229911_2527965510.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SpiralPathExample/2903838201_3257509833_641947546.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/SpiralPathExample/2903838201_3808450660_3076734011.mp4'

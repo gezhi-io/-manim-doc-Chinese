@@ -1,4 +1,4 @@
 # This file is used internally by FFMPEG.
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/CounterclockwisePathExample/1079597619_2061229911_3710834043.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/CounterclockwisePathExample/2903838201_1231583930_1039223869.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/CounterclockwisePathExample/2903838201_3808450660_1152267542.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/CounterclockwisePathExample/1079597619_2061229911_666778797.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/CounterclockwisePathExample/2903838201_1231583930_1699439590.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/CounterclockwisePathExample/2903838201_3808450660_974758029.mp4'

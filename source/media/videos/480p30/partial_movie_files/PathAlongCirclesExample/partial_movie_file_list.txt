@@ -1,4 +1,4 @@
 # This file is used internally by FFMPEG.
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PathAlongCirclesExample/1079597619_2061229911_2723994497.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PathAlongCirclesExample/2903838201_1855392748_3829718146.mp4'
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PathAlongCirclesExample/2903838201_3808450660_893578160.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PathAlongCirclesExample/1079597619_2061229911_498718793.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PathAlongCirclesExample/2903838201_1855392748_2957545321.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/PathAlongCirclesExample/2903838201_3808450660_2809139454.mp4'

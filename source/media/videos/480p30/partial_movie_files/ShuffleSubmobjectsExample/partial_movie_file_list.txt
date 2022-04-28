@@ -1,2 +1,2 @@
 # This file is used internally by FFMPEG.
-file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ShuffleSubmobjectsExample/1079597619_425310988_223132457.mp4'
+file 'file:/Users/gezhi.io/CodeWork/manim-docs-Chinese/source/media/videos/480p30/partial_movie_files/ShuffleSubmobjectsExample/1079597619_2693718638_223132457.mp4'
