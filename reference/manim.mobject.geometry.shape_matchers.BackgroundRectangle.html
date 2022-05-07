@@ -421,7 +421,7 @@
 <li class="toctree-l5"><a class="reference internal" href="manim.mobject.geometry.arc.ArcBetweenPoints.html">ArcBetweenPoints</a></li>
 <li class="toctree-l5"><a class="reference internal" href="manim.mobject.geometry.arc.ArcPolygon.html">ArcPolygon</a></li>
 <li class="toctree-l5"><a class="reference internal" href="manim.mobject.geometry.arc.ArcPolygonFromArcs.html">ArcPolygonFromArcs</a></li>
-<li class="toctree-l5"><a class="reference internal" href="manim.mobject.geometry.arc.Circle.html">Circle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="manim.mobject.geometry.arc.Circle.html">圆形（Circle）</a></li>
 <li class="toctree-l5"><a class="reference internal" href="manim.mobject.geometry.arc.CubicBezier.html">CubicBezier</a></li>
 <li class="toctree-l5"><a class="reference internal" href="manim.mobject.geometry.arc.CurvedArrow.html">CurvedArrow</a></li>
 <li class="toctree-l5"><a class="reference internal" href="manim.mobject.geometry.arc.CurvedDoubleArrow.html">CurvedDoubleArrow</a></li>
@@ -816,7 +816,7 @@ of the scene.</p>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Rotate</span><span class="p">(</span><span class="n">backgroundRectangle2</span><span class="p">,</span> <span class="n">PI</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>
 </pre></div>
 </div>
-</div><p class="rubric">Methods</p>
+</div><p class="rubric">方法</p>
 <div class="table-wrapper"><table class="longtable docutils align-default">
 <colgroup>
 <col style="width: 10%"/>
@@ -824,7 +824,7 @@ of the scene.</p>
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#manim.mobject.geometry.shape_matchers.BackgroundRectangle.get_fill_color" title="manim.mobject.geometry.shape_matchers.BackgroundRectangle.get_fill_color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_fill_color</span></code></a></p></td>
-<td><p>If there are multiple colors (for gradient) this returns the first one</p></td>
+<td><p>如果有多种颜色（设置渐变颜色的情况），则返回第一个</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#manim.mobject.geometry.shape_matchers.BackgroundRectangle.pointwise_become_partial" title="manim.mobject.geometry.shape_matchers.BackgroundRectangle.pointwise_become_partial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pointwise_become_partial</span></code></a></p></td>
 <td><p>Given two bounds a and b, transforms the points of the self vmobject into the points of the vmobject passed as parameter with respect to the bounds.</p></td>
@@ -834,7 +834,7 @@ of the scene.</p>
 </tr>
 </tbody>
 </table></div>
-<p class="rubric">Attributes</p>
+<p class="rubric">属性</p>
 <div class="table-wrapper"><table class="longtable docutils align-default">
 <colgroup>
 <col style="width: 10%"/>
@@ -842,7 +842,7 @@ of the scene.</p>
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animate</span></code></p></td>
-<td><p>Used to animate the application of any method of <code class="code docutils literal notranslate"><span class="pre">self</span></code>.</p></td>
+<td><p>用于在任何 <code class="code docutils literal notranslate"><span class="pre">self</span></code> 方法上应用动画效果</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animation_overrides</span></code></p></td>
 <td><p></p></td>
@@ -854,7 +854,7 @@ of the scene.</p>
 <td><p>Mobject 的深度。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fill_color</span></code></p></td>
-<td><p>If there are multiple colors (for gradient) this returns the first one</p></td>
+<td><p>如果有多种颜色（设置渐变颜色的情况），则返回第一个</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">height</span></code></p></td>
 <td><p>Mobject 的高度。</p></td>
@@ -866,7 +866,7 @@ of the scene.</p>
 <td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">width</span></code></p></td>
-<td><p>The width of the mobject.</p></td>
+<td><p>Mobject 的宽度。</p></td>
 </tr>
 </tbody>
 </table></div>
@@ -884,8 +884,7 @@ of the scene.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.geometry.shape_matchers.BackgroundRectangle.get_fill_color">
 <span class="sig-name descname"><span class="pre">get_fill_color</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/geometry/shape_matchers.html#BackgroundRectangle.get_fill_color"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.geometry.shape_matchers.BackgroundRectangle.get_fill_color" title="永久链接至目标">#</a></dt>
-<dd><p>If there are multiple colors (for gradient)
-this returns the first one</p>
+<dd><p>如果有多种颜色（设置渐变颜色的情况），则返回第一个</p>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.geometry.shape_matchers.BackgroundRectangle.pointwise_become_partial">
