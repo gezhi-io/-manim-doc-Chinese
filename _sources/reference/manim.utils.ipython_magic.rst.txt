@@ -11,6 +11,15 @@
 
    
    
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree: .
+      :nosignatures:
+      
+        ManimMagic
+      
+   
    
 
    

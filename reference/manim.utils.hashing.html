@@ -12,15 +12,15 @@
   
 <meta property="og:site_name" content="Manim Community | Documentation" />
   
-<meta property="og:description" content="Utilities for scene caching. Functions" />
+<meta property="og:description" content="Utilities for scene caching. 函数" />
   
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
   <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="ipython_magic" href="manim.utils.ipython_magic.html" /><link rel="prev" title="debug" href="manim.utils.debug.html" />
 
-    <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
-        <title>hashing - Manim Community v0.15.1</title>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.4.0, furo 2022.04.07"/>
+        <title>hashing - Manim Community v0.15.2</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=68f4518137b9aefe99b631505a2064c3c42c9852" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -170,7 +170,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">Manim Community v0.15.1</div></a>
+      <a href="../index.html"><div class="brand">Manim Community v0.15.2</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -197,7 +197,7 @@
     <img class="sidebar-logo only-dark" src="../_static/manim-logo-sidebar-dark.svg" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">Manim Community v0.15.1</span>
+  <span class="sidebar-brand-text">Manim Community v0.15.2</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
@@ -272,6 +272,7 @@
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.creation.ShowIncreasingSubsets.html">ShowIncreasingSubsets</a></li>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.creation.ShowPartial.html">ShowPartial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.creation.ShowSubmobjectsOneByOne.html">ShowSubmobjectsOneByOne</a></li>
+<li class="toctree-l4"><a class="reference internal" href="manim.animation.creation.SpiralIn.html">SpiralIn</a></li>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.creation.Uncreate.html">Uncreate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.creation.Unwrite.html">Unwrite</a></li>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.creation.Write.html">Write</a></li>
@@ -379,7 +380,6 @@
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="manim.camera.moving_camera.html">moving_camera</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="manim.camera.moving_camera.CameraFrame.html">CameraFrame</a></li>
 <li class="toctree-l4"><a class="reference internal" href="manim.camera.moving_camera.MovingCamera.html">MovingCamera</a></li>
 </ul>
 </li>
@@ -708,7 +708,10 @@
 <li class="toctree-l3"><a class="reference internal" href="manim.utils.deprecation.html">deprecation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="manim.utils.debug.html">debug</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">hashing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="manim.utils.ipython_magic.html">ipython_magic</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="manim.utils.ipython_magic.html">ipython_magic</a><input class="toctree-checkbox" id="toctree-checkbox-79" name="toctree-checkbox-79" role="switch" type="checkbox"/><label for="toctree-checkbox-79"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="manim.utils.ipython_magic.ManimMagic.html">ManimMagic</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="manim.utils.images.html">images</a></li>
 <li class="toctree-l3"><a class="reference internal" href="manim.utils.iterables.html">iterables</a></li>
 <li class="toctree-l3"><a class="reference internal" href="manim.utils.paths.html">paths</a></li>
@@ -716,12 +719,12 @@
 <li class="toctree-l3"><a class="reference internal" href="manim.utils.simple_functions.html">simple_functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="manim.utils.sounds.html">sounds</a></li>
 <li class="toctree-l3"><a class="reference internal" href="manim.utils.space_ops.html">space_ops</a></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="manim.utils.tex.html">tex</a><input class="toctree-checkbox" id="toctree-checkbox-79" name="toctree-checkbox-79" role="switch" type="checkbox"/><label for="toctree-checkbox-79"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="manim.utils.tex.html">tex</a><input class="toctree-checkbox" id="toctree-checkbox-80" name="toctree-checkbox-80" role="switch" type="checkbox"/><label for="toctree-checkbox-80"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="manim.utils.tex.TexTemplate.html">TexTemplate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="manim.utils.tex.TexTemplateFromFile.html">TexTemplateFromFile</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="manim.utils.tex_templates.html">tex_templates</a><input class="toctree-checkbox" id="toctree-checkbox-80" name="toctree-checkbox-80" role="switch" type="checkbox"/><label for="toctree-checkbox-80"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="manim.utils.tex_templates.html">tex_templates</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="manim.utils.tex_templates.TexFontTemplates.html">TexFontTemplates</a></li>
 <li class="toctree-l4"><a class="reference internal" href="manim.utils.tex_templates.TexTemplateLibrary.html">TexTemplateLibrary</a></li>
 </ul>
@@ -734,9 +737,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="manim.utils.docbuild.manim_directive.html">manim_directive</a><input class="toctree-checkbox" id="toctree-checkbox-83" name="toctree-checkbox-83" role="switch" type="checkbox"/><label for="toctree-checkbox-83"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-83" name="toctree-checkbox-83" role="switch" type="checkbox"/><label for="toctree-checkbox-83"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="manim.utils.docbuild.manim_directive.html">manim_directive</a><input class="toctree-checkbox" id="toctree-checkbox-84" name="toctree-checkbox-84" role="switch" type="checkbox"/><label for="toctree-checkbox-84"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="manim.utils.docbuild.manim_directive.ManimDirective.html">ManimDirective</a></li>
 <li class="toctree-l4"><a class="reference internal" href="manim.utils.docbuild.manim_directive.skip_manim_node.html">skip_manim_node</a></li>
 </ul>
@@ -789,7 +792,7 @@
           <section id="module-manim.utils.hashing">
 <span id="hashing"></span><h1>hashing<a class="headerlink" href="#module-manim.utils.hashing" title="永久链接至标题">#</a></h1>
 <p>Utilities for scene caching.</p>
-<p class="rubric">Functions</p>
+<p class="rubric">函数</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.hashing.get_hash_from_play_call">
 <span class="sig-name descname"><span class="pre">get_hash_from_play_call</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scene_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">animations_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_mobjects_list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/hashing.html#get_hash_from_play_call"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.hashing.get_hash_from_play_call" title="永久链接至目标">#</a></dt>
@@ -800,7 +803,7 @@
 <li><p><strong>scene_object</strong> (<a class="reference internal" href="manim.scene.scene.Scene.html#manim.scene.scene.Scene" title="manim.scene.scene.Scene"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code></a>) – The scene object.</p></li>
 <li><p><strong>camera_object</strong> (<a class="reference internal" href="manim.camera.camera.Camera.html#manim.camera.camera.Camera" title="manim.camera.camera.Camera"><code class="xref py py-class docutils literal notranslate"><span class="pre">Camera</span></code></a>) – The camera object used in the scene.</p></li>
 <li><p><strong>animations_list</strong> (Iterable[<a class="reference internal" href="manim.animation.animation.Animation.html#manim.animation.animation.Animation" title="manim.animation.animation.Animation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Animation</span></code></a>]) – The list of animations.</p></li>
-<li><p><strong>current_mobjects_list</strong> (Iterable[<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a>]) – The list of mobjects.</p></li>
+<li><p><strong>current_mobjects_list</strong> (Iterable[<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a>]) – Mobject 列表</p></li>
 </ul>
 </dd>
 <dt class="field-even">返回</dt>

@@ -1,0 +1,21 @@
+SpiralIn
+========
+
+Qualified name: ``manim.animation.creation.SpiralIn``
+
+.. currentmodule:: manim.animation.creation
+
+.. autoclass:: SpiralIn
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~SpiralIn.interpolate_mobject
+
+   
+   
