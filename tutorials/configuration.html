@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="zh_CN">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
-  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Using Text" href="using_text.html" /><link rel="prev" title="A deeper look" href="a_deeper_look.html" />
+  <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Using Text" href="using_text.html" /><link rel="prev" title="A deeper look" href="a_deeper_look.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
         <title>Configuration - Manim Community v0.15.1</title>
@@ -200,7 +200,7 @@
   <span class="sidebar-brand-text">Manim Community v0.15.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -245,7 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../reference.html">参考目录</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.animation.Animation.html">Animation</a></li>
@@ -731,8 +731,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -787,7 +787,7 @@
         </div>
         <article role="main">
           <section id="configuration">
-<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">#</a></h1>
+<h1>Configuration<a class="headerlink" href="#configuration" title="永久链接至标题">#</a></h1>
 <p>Manim provides an extensive configuration system that allows it to adapt to
 many different use cases.  There are many configuration options that can be
 configured at different times during the scene rendering process.  Each option
@@ -797,7 +797,7 @@ is first imported via <a class="reference internal" href="#the-config-files">the
 <p>The most common, simplest, and recommended way to configure Manim is
 via the command-line interface (CLI), which is described directly below.</p>
 <section id="command-line-arguments">
-<h2>Command-line arguments<a class="headerlink" href="#command-line-arguments" title="Permalink to this headline">#</a></h2>
+<h2>Command-line arguments<a class="headerlink" href="#command-line-arguments" title="永久链接至标题">#</a></h2>
 <p>By far the most commonly used command in the CLI is the <code class="docutils literal notranslate"><span class="pre">render</span></code> command,
 which is used to render scene(s) to an output file.
 It is used with the following arguments:</p>
@@ -827,12 +827,12 @@ file <code class="docutils literal notranslate"><span class="pre">file.py</span>
 <p>Another frequently used flag is <code class="docutils literal notranslate"><span class="pre">-p</span></code> (“preview”), which makes manim
 open the rendered video after it’s done rendering.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">注解</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">-p</span></code> flag does not change any properties of the global
 <code class="docutils literal notranslate"><span class="pre">config</span></code> dict.  The <code class="docutils literal notranslate"><span class="pre">-p</span></code> flag is only a command-line convenience.</p>
 </div>
 <section id="advanced-examples">
-<h3>Advanced examples<a class="headerlink" href="#advanced-examples" title="Permalink to this headline">#</a></h3>
+<h3>Advanced examples<a class="headerlink" href="#advanced-examples" title="永久链接至标题">#</a></h3>
 <p>To render a scene in high quality, but only output the last frame of the scene
 instead of the whole video, you can execute</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>manim -sqh &lt;file.py&gt; SceneName
@@ -848,7 +848,7 @@ open the file after it is rendered.</p>
 </div>
 </section>
 <section id="a-list-of-all-cli-flags">
-<h3>A list of all CLI flags<a class="headerlink" href="#a-list-of-all-cli-flags" title="Permalink to this headline">#</a></h3>
+<h3>A list of all CLI flags<a class="headerlink" href="#a-list-of-all-cli-flags" title="永久链接至标题">#</a></h3>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ manim --help
 Manim Community v0.15.1
 
@@ -1006,7 +1006,7 @@ Options:
 </section>
 </section>
 <section id="the-manimconfig-class">
-<h2>The ManimConfig class<a class="headerlink" href="#the-manimconfig-class" title="Permalink to this headline">#</a></h2>
+<h2>The ManimConfig class<a class="headerlink" href="#the-manimconfig-class" title="永久链接至标题">#</a></h2>
 <p>The most direct way of configuring Manim is through the global <code class="docutils literal notranslate"><span class="pre">config</span></code> object,
 which is an instance of <a class="reference internal" href="../reference/manim._config.utils.ManimConfig.html#manim._config.utils.ManimConfig" title="manim._config.utils.ManimConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">ManimConfig</span></code></a>.  Each property of this class is
 a config option that can be accessed either with standard attribute syntax or
@@ -1017,7 +1017,7 @@ with dict-like syntax:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">注解</p>
 <p>The former is preferred; the latter is provided for backwards
 compatibility.</p>
 </div>
@@ -1066,7 +1066,7 @@ rendered in our documentation with a reference frame.</p>
 </div>
 </div></section>
 <section id="the-config-files">
-<h2>The config files<a class="headerlink" href="#the-config-files" title="Permalink to this headline">#</a></h2>
+<h2>The config files<a class="headerlink" href="#the-config-files" title="永久链接至标题">#</a></h2>
 <p>As the last example shows, executing Manim from the command line may involve
 using many flags simultaneously.  This may become a nuisance if you must
 execute the same script many times in a short time period, for example, when
@@ -1076,7 +1076,7 @@ file ending with the suffix <code class="docutils literal notranslate"><span cla
 <p>To use a local configuration file when rendering your scene, you must create a
 file with the name <code class="docutils literal notranslate"><span class="pre">manim.cfg</span></code> in the same directory as your scene code.</p>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<p class="admonition-title">警告</p>
 <p>The config file <strong>must</strong> be named <code class="docutils literal notranslate"><span class="pre">manim.cfg</span></code>. Currently, Manim
 does not support config files with any other name.</p>
 </div>
@@ -1102,7 +1102,7 @@ is in the same directory as &lt;file.py&gt;,</p>
 </pre></div>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<p class="admonition-title">小技巧</p>
 <p>The names of the configuration options admissible in config files are
 exactly the same as the <strong>long names</strong> of the corresponding command-
 line flags.  For example, the <code class="docutils literal notranslate"><span class="pre">-c</span></code> and <code class="docutils literal notranslate"><span class="pre">--background_color</span></code> flags
@@ -1126,7 +1126,7 @@ system.</p>
 <p>The file described here is called the <strong>folder-wide</strong> config file because it
 affects all scene scripts found in the same folder.</p>
 <section id="the-user-config-file">
-<h3>The user config file<a class="headerlink" href="#the-user-config-file" title="Permalink to this headline">#</a></h3>
+<h3>The user config file<a class="headerlink" href="#the-user-config-file" title="永久链接至标题">#</a></h3>
 <p>As explained in the previous section, a <code class="code docutils literal notranslate"><span class="pre">manim.cfg</span></code> config file only
 affects the scene scripts in its same folder.  However, the user may also
 create a special config file that will apply to all scenes rendered by that
@@ -1142,13 +1142,13 @@ system.</p>
 </ul>
 <p>Here, <code class="code docutils literal notranslate"><span class="pre">UserDirectory</span></code> is the user’s home folder.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">注解</p>
 <p>A user may have many <strong>folder-wide</strong> config files, one per folder,
 but only one <strong>user-wide</strong> config file.  Different users in the same
 computer may each have their own user-wide config file.</p>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<p class="admonition-title">警告</p>
 <p>Do not store scene scripts in the same folder as the user-wide
 config file.  In this case, the behavior is undefined.</p>
 </div>
@@ -1156,7 +1156,7 @@ config file.  In this case, the behavior is undefined.</p>
 user-wide config file and read its configuration.</p>
 </section>
 <section id="cascading-config-files">
-<h3>Cascading config files<a class="headerlink" href="#cascading-config-files" title="Permalink to this headline">#</a></h3>
+<h3>Cascading config files<a class="headerlink" href="#cascading-config-files" title="永久链接至标题">#</a></h3>
 <p>What happens if you execute Manim and it finds both a folder-wide config file
 and a user-wide config file?  Manim will read both files, but if they are
 incompatible, <strong>the folder-wide file takes precedence</strong>.</p>
@@ -1192,7 +1192,7 @@ precedence, so any config options in the user-wide and any folder-wide files
 will override the library-wide file.  This is referred to as the <em>cascading</em>
 config file system.</p>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<p class="admonition-title">警告</p>
 <p><strong>The user should not try to modify the library-wide file</strong>.
 Contributors should receive explicit confirmation from the core
 developer team before modifying it.</p>
@@ -1200,7 +1200,7 @@ developer team before modifying it.</p>
 </section>
 </section>
 <section id="order-of-operations">
-<h2>Order of operations<a class="headerlink" href="#order-of-operations" title="Permalink to this headline">#</a></h2>
+<h2>Order of operations<a class="headerlink" href="#order-of-operations" title="永久链接至标题">#</a></h2>
 <div class="mxgraph" data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","edit":"_blank","url":"https://drive.google.com/uc?id=1WYVKKoRbXrumHEcyQKQ9s1yCnBvfU2Ui&amp;export=download"}' style="max-width:100%;border:1px solid transparent;"></div>
 <script src="https://viewer.diagrams.net/embed2.js?&amp;fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1WYVKKoRbXrumHEcyQKQ9s1yCnBvfU2Ui%26export%3Ddownload" type="text/javascript"></script><p>With so many different ways of configuring Manim, it can be difficult to know
 when each config option is being set.  In fact, this will depend on how Manim
@@ -1245,7 +1245,7 @@ highest precedence is:</p>
 </ol>
 </section>
 <section id="a-list-of-all-config-options">
-<h2>A list of all config options<a class="headerlink" href="#a-list-of-all-config-options" title="Permalink to this headline">#</a></h2>
+<h2>A list of all config options<a class="headerlink" href="#a-list-of-all-config-options" title="永久链接至标题">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>['aspect_ratio', 'assets_dir', 'background_color', 'background_opacity',
 'bottom', 'custom_folders', 'disable_caching', 'dry_run',
 'ffmpeg_loglevel', 'flush_cache', 'frame_height', 'frame_rate',
@@ -1316,7 +1316,7 @@ highest precedence is:</p>
       <div class="toc-sticky toc-scroll">
         <div class="toc-title-container">
           <span class="toc-title">
-            Contents
+            目录
           </span>
         </div>
         <div class="toc-tree-container">
@@ -1354,6 +1354,7 @@ highest precedence is:</p>
     <script src="../_static/scripts/furo.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/responsiveSvg.js"></script>
     </body>
 </html>

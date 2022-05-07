@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="zh_CN">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
-  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="three_d_camera" href="manim.camera.three_d_camera.html" /><link rel="prev" title="multi_camera" href="manim.camera.multi_camera.html" />
+  <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="three_d_camera" href="manim.camera.three_d_camera.html" /><link rel="prev" title="multi_camera" href="manim.camera.multi_camera.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
         <title>MultiCamera - Manim Community v0.15.1</title>
@@ -200,7 +200,7 @@
   <span class="sidebar-brand-text">Manim Community v0.15.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -245,7 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">参考目录</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.animation.Animation.html">Animation</a></li>
@@ -731,8 +731,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -787,16 +787,16 @@
         </div>
         <article role="main">
           <section id="multicamera">
-<h1>MultiCamera<a class="headerlink" href="#multicamera" title="Permalink to this headline">#</a></h1>
+<h1>MultiCamera<a class="headerlink" href="#multicamera" title="永久链接至标题">#</a></h1>
 <p>Qualified name: <code class="docutils literal notranslate"><span class="pre">manim.camera.multi\_camera.MultiCamera</span></code></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="manim.camera.multi_camera.MultiCamera">
-<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">MultiCamera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_mobjects_from_cameras</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_cameras_to_capture_their_own_display</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="manim.camera.moving_camera.MovingCamera.html#manim.camera.moving_camera.MovingCamera" title="manim.camera.moving_camera.MovingCamera"><code class="xref py py-class docutils literal notranslate"><span class="pre">manim.camera.moving_camera.MovingCamera</span></code></a></p>
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">MultiCamera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_mobjects_from_cameras</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_cameras_to_capture_their_own_display</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera" title="永久链接至目标">#</a></dt>
+<dd><p>基类：<a class="reference internal" href="manim.camera.moving_camera.MovingCamera.html#manim.camera.moving_camera.MovingCamera" title="manim.camera.moving_camera.MovingCamera"><code class="xref py py-class docutils literal notranslate"><span class="pre">manim.camera.moving_camera.MovingCamera</span></code></a></p>
 <p>Camera Object that allows for multiple perspectives.</p>
 <p>Initialises the MultiCamera</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image_mobjects_from_cameras</strong> (<a class="reference internal" href="manim.mobject.types.image_mobject.ImageMobject.html#manim.mobject.types.image_mobject.ImageMobject" title="manim.mobject.types.image_mobject.ImageMobject"><em>ImageMobject</em></a>) – </p></li>
 <li><p><strong>kwargs</strong> – Any valid keyword arguments of MovingCamera.</p></li>
@@ -853,62 +853,62 @@
 </table></div>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.camera.multi_camera.MultiCamera.add_image_mobject_from_camera">
-<span class="sig-name descname"><span class="pre">add_image_mobject_from_camera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_mobject_from_camera</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera.add_image_mobject_from_camera"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera.add_image_mobject_from_camera" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">add_image_mobject_from_camera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_mobject_from_camera</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera.add_image_mobject_from_camera"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera.add_image_mobject_from_camera" title="永久链接至目标">#</a></dt>
 <dd><p>Adds an ImageMobject that’s been obtained from the camera
 into the list <code class="docutils literal notranslate"><span class="pre">self.image_mobject_from_cameras</span></code></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>image_mobject_from_camera</strong> (<a class="reference internal" href="manim.mobject.types.image_mobject.ImageMobject.html#manim.mobject.types.image_mobject.ImageMobject" title="manim.mobject.types.image_mobject.ImageMobject"><em>ImageMobject</em></a>) – The ImageMobject to add to self.image_mobject_from_cameras</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.camera.multi_camera.MultiCamera.capture_mobjects">
-<span class="sig-name descname"><span class="pre">capture_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobjects</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera.capture_mobjects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera.capture_mobjects" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">capture_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobjects</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera.capture_mobjects"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera.capture_mobjects" title="永久链接至目标">#</a></dt>
 <dd><p>Capture mobjects by printing them on <code class="xref py py-attr docutils literal notranslate"><span class="pre">pixel_array</span></code>.</p>
 <p>This is the essential function that converts the contents of a Scene
 into an array, which is then converted to an image or video.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>mobjects</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a>) – Mobjects to capture.</p></li>
 <li><p><strong>kwargs</strong> (<em>Any</em>) – Keyword arguments to be passed to <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_mobjects_to_display()</span></code>.</p></li>
 </ul>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
+<p class="rubric">提示</p>
 <p>For a list of classes that can currently be rendered, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">display_funcs()</span></code>.</p>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.camera.multi_camera.MultiCamera.get_mobjects_indicating_movement">
-<span class="sig-name descname"><span class="pre">get_mobjects_indicating_movement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera.get_mobjects_indicating_movement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera.get_mobjects_indicating_movement" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_mobjects_indicating_movement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera.get_mobjects_indicating_movement"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera.get_mobjects_indicating_movement" title="永久链接至目标">#</a></dt>
 <dd><p>Returns all mobjects whose movement implies that the camera
 should think of all other mobjects on the screen as moving</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">返回</dt>
 <dd class="field-odd"><p></p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p>list</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.camera.multi_camera.MultiCamera.reset">
-<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera.reset" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera.reset"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera.reset" title="永久链接至目标">#</a></dt>
 <dd><p>Resets the MultiCamera.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">返回</dt>
 <dd class="field-odd"><p>The reset MultiCamera</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p><a class="reference internal" href="#manim.camera.multi_camera.MultiCamera" title="manim.camera.multi_camera.MultiCamera">MultiCamera</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.camera.multi_camera.MultiCamera.update_sub_cameras">
-<span class="sig-name descname"><span class="pre">update_sub_cameras</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera.update_sub_cameras"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera.update_sub_cameras" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">update_sub_cameras</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/camera/multi_camera.html#MultiCamera.update_sub_cameras"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.camera.multi_camera.MultiCamera.update_sub_cameras" title="永久链接至目标">#</a></dt>
 <dd><p>Reshape sub_camera pixel_arrays</p>
 </dd></dl>
 </dd></dl>
@@ -972,6 +972,7 @@ should think of all other mobjects on the screen as moving</p>
     <script src="../_static/scripts/furo.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/responsiveSvg.js"></script>
     </body>
 </html>

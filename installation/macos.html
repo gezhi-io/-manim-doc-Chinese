@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="zh_CN">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
-  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Linux" href="linux.html" /><link rel="prev" title="Windows" href="windows.html" />
+  <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Linux" href="linux.html" /><link rel="prev" title="Windows" href="windows.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
         <title>MacOS - Manim Community v0.15.1</title>
@@ -200,7 +200,7 @@
   <span class="sidebar-brand-text">Manim Community v0.15.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -245,7 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../reference.html">参考目录</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.animation.Animation.html">Animation</a></li>
@@ -731,8 +731,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -787,7 +787,7 @@
         </div>
         <article role="main">
           <section id="macos">
-<h1>MacOS<a class="headerlink" href="#macos" title="Permalink to this headline">#</a></h1>
+<h1>MacOS<a class="headerlink" href="#macos" title="永久链接至标题">#</a></h1>
 <p>For the sake of simplicity, the following instructions assume that you have
 the popular <a class="reference external" href="https://brew.sh">package manager Homebrew</a> installed. While
 you can certainly also install all dependencies without it, using Homebrew
@@ -795,14 +795,14 @@ makes the process much easier.</p>
 <p>If you want to use Homebrew but do not have it installed yet, please
 follow <a class="reference external" href="https://docs.brew.sh/Installation">Homebrew’s installation instructions</a>.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">注解</p>
 <p>For a while after Apple released its new ARM-based processors (the <em>“M1 chip”</em>),
 the recommended way of installing Manim relied on <em>Rosetta</em>, Apple’s compatibility
 layer between Intel and ARM architectures. This is no longer necessary, Manim can
 (and is recommended to) be installed natively.</p>
 </div>
 <section id="required-dependencies">
-<h2>Required Dependencies<a class="headerlink" href="#required-dependencies" title="Permalink to this headline">#</a></h2>
+<h2>Required Dependencies<a class="headerlink" href="#required-dependencies" title="永久链接至标题">#</a></h2>
 <p>To install all required dependencies for installing Manim (namely: ffmpeg, Python,
 and some required Python packages), run:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install py3cairo ffmpeg
@@ -821,7 +821,7 @@ are required, namely:</p>
 </div>
 <p>to install Manim.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">注解</p>
 <p>A frequent source for installation problems is if <code class="docutils literal notranslate"><span class="pre">pip3</span></code>
 does not point to the correct Python installation on your system.
 To check this, run <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">-V</span></code>: for MacOS Intel, the path should
@@ -836,7 +836,7 @@ at the very end of the file.</p>
 </div>
 </section>
 <section id="optional-dependencies">
-<h2>Optional Dependencies<a class="headerlink" href="#optional-dependencies" title="Permalink to this headline">#</a></h2>
+<h2>Optional Dependencies<a class="headerlink" href="#optional-dependencies" title="永久链接至标题">#</a></h2>
 <p>In order to make use of Manim’s interface to LaTeX for, e.g., rendering
 equations, LaTeX has to be installed as well. Note that this is an optional
 dependency: if you don’t intend to use LaTeX, you don’t have to install it.</p>
@@ -848,7 +848,7 @@ running:</p>
 </pre></div>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<p class="admonition-title">警告</p>
 <p>MacTeX is a <em>full</em> LaTeX distribution and will require more than 4GB of
 disk space. If this is an issue for you, consider installing a smaller
 distribution like
@@ -865,7 +865,7 @@ be sufficient for your particular application) is:</p>
 </div>
 </section>
 <section id="working-with-manim">
-<h2>Working with Manim<a class="headerlink" href="#working-with-manim" title="Permalink to this headline">#</a></h2>
+<h2>Working with Manim<a class="headerlink" href="#working-with-manim" title="永久链接至标题">#</a></h2>
 <p>At this point, you should have a working installation of Manim. Head
 over to our <a class="reference internal" href="../tutorials/quickstart.html"><span class="doc">Quickstart Tutorial</span></a> to learn
 how to make your own <em>Manimations</em>!</p>
@@ -923,7 +923,7 @@ how to make your own <em>Manimations</em>!</p>
       <div class="toc-sticky toc-scroll">
         <div class="toc-title-container">
           <span class="toc-title">
-            Contents
+            目录
           </span>
         </div>
         <div class="toc-tree-container">
@@ -951,6 +951,7 @@ how to make your own <em>Manimations</em>!</p>
     <script src="../_static/scripts/furo.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/responsiveSvg.js"></script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="zh_CN">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
-  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="JSONFormatter" href="manim._config.logger_utils.JSONFormatter.html" /><link rel="prev" title="ManimFrame" href="manim._config.utils.ManimFrame.html" />
+  <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="JSONFormatter" href="manim._config.logger_utils.JSONFormatter.html" /><link rel="prev" title="ManimFrame" href="manim._config.utils.ManimFrame.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
         <title>logger_utils - Manim Community v0.15.1</title>
@@ -200,7 +200,7 @@
   <span class="sidebar-brand-text">Manim Community v0.15.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -245,7 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">参考目录</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.animation.Animation.html">Animation</a></li>
@@ -731,8 +731,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -787,7 +787,7 @@
         </div>
         <article role="main">
           <section id="module-manim._config.logger_utils">
-<span id="logger-utils"></span><h1>logger_utils<a class="headerlink" href="#module-manim._config.logger_utils" title="Permalink to this headline">#</a></h1>
+<span id="logger-utils"></span><h1>logger_utils<a class="headerlink" href="#module-manim._config.logger_utils" title="永久链接至标题">#</a></h1>
 <p>Utilities to create and set the logger.</p>
 <p>Manim’s logger can be accessed as <code class="docutils literal notranslate"><span class="pre">manim.logger</span></code>, or as
 <code class="docutils literal notranslate"><span class="pre">logging.getLogger("manim")</span></code>, once the library has been imported.  Manim also
@@ -810,69 +810,69 @@ format.</p>
 <p class="rubric">Functions</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim._config.logger_utils.make_logger">
-<span class="sig-name descname"><span class="pre">make_logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/_config/logger_utils.html#make_logger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim._config.logger_utils.make_logger" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">make_logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/_config/logger_utils.html#make_logger"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim._config.logger_utils.make_logger" title="永久链接至目标">#</a></dt>
 <dd><p>Make the manim logger and console.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>parser</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">configparser.ConfigParser</span></code>) – A parser containing any .cfg files in use.</p></li>
 <li><p><strong>verbosity</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The verbosity level of the logger.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The manim logger and consoles. The first console outputs
 to stdout, the second to stderr. All use the theme returned by
 <a class="reference internal" href="#manim._config.logger_utils.parse_theme" title="manim._config.logger_utils.parse_theme"><code class="xref py py-func docutils literal notranslate"><span class="pre">parse_theme()</span></code></a>.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">logging.Logger</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">rich.Console</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">rich.Console</span></code></p>
 </dd>
 </dl>
 <div class="admonition seealso">
-<p class="admonition-title">See also</p>
+<p class="admonition-title">参见</p>
 <p><a class="reference internal" href="manim._config.utils.html#manim._config.utils.make_config_parser" title="manim._config.utils.make_config_parser"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_config_parser()</span></code></a>, <a class="reference internal" href="#manim._config.logger_utils.parse_theme" title="manim._config.logger_utils.parse_theme"><code class="xref py py-func docutils literal notranslate"><span class="pre">parse_theme()</span></code></a></p>
 </div>
-<p class="rubric">Notes</p>
+<p class="rubric">提示</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">parser</span></code> is assumed to contain only the options related to
 configuring the logger at the top level.</p>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim._config.logger_utils.parse_theme">
-<span class="sig-name descname"><span class="pre">parse_theme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/_config/logger_utils.html#parse_theme"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim._config.logger_utils.parse_theme" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">parse_theme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/_config/logger_utils.html#parse_theme"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim._config.logger_utils.parse_theme" title="永久链接至目标">#</a></dt>
 <dd><p>Configure the rich style of logger and console output.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>parser</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">configparser.ConfigParser</span></code>) – A parser containing any .cfg files in use.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The rich theme to be used by the manim logger.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">rich.Theme</span></code></p>
 </dd>
 </dl>
 <div class="admonition seealso">
-<p class="admonition-title">See also</p>
+<p class="admonition-title">参见</p>
 <p><a class="reference internal" href="#manim._config.logger_utils.make_logger" title="manim._config.logger_utils.make_logger"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_logger()</span></code></a></p>
 </div>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim._config.logger_utils.set_file_logger">
-<span class="sig-name descname"><span class="pre">set_file_logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/_config/logger_utils.html#set_file_logger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim._config.logger_utils.set_file_logger" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_file_logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbosity</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/_config/logger_utils.html#set_file_logger"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim._config.logger_utils.set_file_logger" title="永久链接至目标">#</a></dt>
 <dd><p>Add a file handler to manim logger.</p>
 <p>The path to the file is built using <code class="docutils literal notranslate"><span class="pre">config.log_dir</span></code>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>config</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">ManimConfig</span></code>) – The global config, used to determine the log file path.</p></li>
 <li><p><strong>verbosity</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The verbosity level of the logger.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
+<p class="rubric">提示</p>
 <p>Calling this function changes the verbosity of all handlers assigned to
 manim logger.</p>
 </dd></dl>
@@ -936,6 +936,7 @@ manim logger.</p>
     <script src="../_static/scripts/furo.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/responsiveSvg.js"></script>
     </body>
 </html>

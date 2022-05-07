@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="zh_CN">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
-  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="scene_file_writer" href="manim.scene.scene_file_writer.html" /><link rel="prev" title="RerunSceneHandler" href="manim.scene.scene.RerunSceneHandler.html" />
+  <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="scene_file_writer" href="manim.scene.scene_file_writer.html" /><link rel="prev" title="RerunSceneHandler" href="manim.scene.scene.RerunSceneHandler.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
         <title>Scene - Manim Community v0.15.1</title>
@@ -200,7 +200,7 @@
   <span class="sidebar-brand-text">Manim Community v0.15.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -245,7 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">参考目录</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.animation.Animation.html">Animation</a></li>
@@ -731,8 +731,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -787,12 +787,12 @@
         </div>
         <article role="main">
           <section id="scene">
-<h1>Scene<a class="headerlink" href="#scene" title="Permalink to this headline">#</a></h1>
+<h1>Scene<a class="headerlink" href="#scene" title="永久链接至标题">#</a></h1>
 <p>Qualified name: <code class="docutils literal notranslate"><span class="pre">manim.scene.scene.Scene</span></code></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene">
-<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Scene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">renderer=None</span></em>, <em class="sig-param"><span class="pre">camera_class=&lt;class</span> <span class="pre">'manim.camera.camera.Camera'&gt;</span></em>, <em class="sig-param"><span class="pre">always_update_mobjects=False</span></em>, <em class="sig-param"><span class="pre">random_seed=None</span></em>, <em class="sig-param"><span class="pre">skip_animations=False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Scene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">renderer=None</span></em>, <em class="sig-param"><span class="pre">camera_class=&lt;class</span> <span class="pre">'manim.camera.camera.Camera'&gt;</span></em>, <em class="sig-param"><span class="pre">always_update_mobjects=False</span></em>, <em class="sig-param"><span class="pre">random_seed=None</span></em>, <em class="sig-param"><span class="pre">skip_animations=False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene" title="永久链接至目标">#</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>A Scene is the canvas of your animation.</p>
 <p>The primary role of <a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code></a> is to provide the user with tools to manage
 mobjects and animations.  Generally speaking, a manim script consists of a class
@@ -806,7 +806,7 @@ turn calls <a class="reference internal" href="#manim.scene.scene.Scene.setup" t
 <a class="reference internal" href="#manim.scene.scene.Scene.tear_down" title="manim.scene.scene.Scene.tear_down"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.tear_down()</span></code></a>, in that order.</p>
 <p>It is not recommended to override the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method in user Scenes.  For code
 that should be ran before a Scene is rendered, use <a class="reference internal" href="#manim.scene.scene.Scene.setup" title="manim.scene.scene.Scene.setup"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.setup()</span></code></a> instead.</p>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <p>Override the <a class="reference internal" href="#manim.scene.scene.Scene.construct" title="manim.scene.scene.Scene.construct"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.construct()</span></code></a> method with your code.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyScene</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -1001,61 +1001,61 @@ that should be ran before a Scene is rendered, use <a class="reference internal"
 </table></div>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.add">
-<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.add"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.add" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.add"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.add" title="永久链接至目标">#</a></dt>
 <dd><p>Mobjects will be displayed, from background to
 foreground in the order with which they are added.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>*mobjects</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><em>Mobject</em></a>) – Mobjects to add.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The same scene after adding the Mobjects in.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene">Scene</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.add_foreground_mobject">
-<span class="sig-name descname"><span class="pre">add_foreground_mobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.add_foreground_mobject"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.add_foreground_mobject" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">add_foreground_mobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.add_foreground_mobject"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.add_foreground_mobject" title="永久链接至目标">#</a></dt>
 <dd><p>Adds a single mobject to the foreground, and internally to the list
 foreground_mobjects, and mobjects.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>mobject</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><em>Mobject</em></a>) – The Mobject to add to the foreground.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The Scene, with the foreground mobject added.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene">Scene</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.add_foreground_mobjects">
-<span class="sig-name descname"><span class="pre">add_foreground_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.add_foreground_mobjects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.add_foreground_mobjects" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">add_foreground_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.add_foreground_mobjects"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.add_foreground_mobjects" title="永久链接至目标">#</a></dt>
 <dd><p>Adds mobjects to the foreground, and internally to the list
 foreground_mobjects, and mobjects.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>*mobjects</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><em>Mobject</em></a>) – The Mobjects to add to the foreground.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The Scene, with the foreground mobjects added.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene">Scene</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.add_sound">
-<span class="sig-name descname"><span class="pre">add_sound</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sound_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.add_sound"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.add_sound" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">add_sound</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sound_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.add_sound"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.add_sound" title="永久链接至目标">#</a></dt>
 <dd><p>This method is used to add a sound to the animation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>sound_file</strong> (<em>str</em>) – The path to the sound file.</p></li>
 <li><p><strong>time_offset</strong> (<em>int</em><em>,</em><em>float</em><em>, </em><em>optional</em>) – The offset in the sound file after which
@@ -1064,7 +1064,7 @@ the sound can be played.</p></li>
 </ul>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <div class="admonition admonition-manim-example" id="soundexample">
 <p class="admonition-title">Example: SoundExample <a class="headerlink" href="#soundexample">¶</a></p><video autoplay="" class="manim-video" controls="" loop="" src="./SoundExample-1.mp4"></video><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manim</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -1087,12 +1087,12 @@ the sound can be played.</p></li>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.add_subcaption">
-<span class="sig-name descname"><span class="pre">add_subcaption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.add_subcaption"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.add_subcaption" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">add_subcaption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.add_subcaption"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.add_subcaption" title="永久链接至目标">#</a></dt>
 <dd><p>Adds an entry in the corresponding subcaption file
 at the current time stamp.</p>
 <p>The current time stamp is obtained from <code class="docutils literal notranslate"><span class="pre">Scene.renderer.time</span></code>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>content</strong> (<em>str</em>) – The subcaption content.</p></li>
 <li><p><strong>duration</strong> (<em>float</em>) – The duration (in seconds) for which the subcaption is shown.</p></li>
@@ -1100,11 +1100,11 @@ at the current time stamp.</p>
 of the subcaption.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <p>This example illustrates both possibilities for adding
 subcaptions to Manimations:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SubcaptionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
@@ -1126,119 +1126,119 @@ subcaptions to Manimations:</p>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.begin_animations">
-<span class="sig-name descname"><span class="pre">begin_animations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.begin_animations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.begin_animations" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">begin_animations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.begin_animations"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.begin_animations" title="永久链接至目标">#</a></dt>
 <dd><p>Start the animations of the scene.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.bring_to_back">
-<span class="sig-name descname"><span class="pre">bring_to_back</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.bring_to_back"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.bring_to_back" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">bring_to_back</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.bring_to_back"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.bring_to_back" title="永久链接至目标">#</a></dt>
 <dd><p>Removes the mobject from the scene and
 adds them to the back of the scene.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>*mobjects</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><em>Mobject</em></a>) – The mobject(s) to push to the back of the scene.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The Scene, with the mobjects pushed to the back
 of the scene.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene">Scene</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.bring_to_front">
-<span class="sig-name descname"><span class="pre">bring_to_front</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.bring_to_front"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.bring_to_front" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">bring_to_front</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.bring_to_front"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.bring_to_front" title="永久链接至目标">#</a></dt>
 <dd><p>Adds the passed mobjects to the scene again,
 pushing them to he front of the scene.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>*mobjects</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><em>Mobject</em></a>) – The mobject(s) to bring to the front of the scene.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The Scene, with the mobjects brought to the front
 of the scene.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene">Scene</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.clear">
-<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.clear"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.clear" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.clear"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.clear" title="永久链接至目标">#</a></dt>
 <dd><p>Removes all mobjects present in self.mobjects
 and self.foreground_mobjects from the scene.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">返回</dt>
 <dd class="field-odd"><p>The Scene, with all of its mobjects in
 self.mobjects and self.foreground_mobjects
 removed.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p><a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene">Scene</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.compile_animation_data">
-<span class="sig-name descname"><span class="pre">compile_animation_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">animations</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">play_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.compile_animation_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.compile_animation_data" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">compile_animation_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">animations</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">play_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.compile_animation_data"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.compile_animation_data" title="永久链接至目标">#</a></dt>
 <dd><p>Given a list of animations, compile the corresponding
 static and moving mobjects, and gather the animation durations.</p>
 <p>This also begins the animations.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>skip_rendering</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the rendering should be skipped, by default False</p></li>
 <li><p><strong>animations</strong> (<a class="reference internal" href="manim.animation.animation.Animation.html#manim.animation.animation.Animation" title="manim.animation.animation.Animation"><em>manim.animation.animation.Animation</em></a>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>None if there is nothing to play, or self otherwise.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>self, None</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.compile_animations">
-<span class="sig-name descname"><span class="pre">compile_animations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.compile_animations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.compile_animations" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">compile_animations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.compile_animations"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.compile_animations" title="永久链接至目标">#</a></dt>
 <dd><p>Creates _MethodAnimations from any _AnimationBuilders and updates animation
 kwargs with kwargs passed to play().</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>*args</strong> (Tuple[<code class="xref py py-class docutils literal notranslate"><span class="pre">Animation</span></code>]) – Animations to be played.</p></li>
 <li><p><strong>**kwargs</strong> – Configuration for the call to play().</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>Animations to be played.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>Tuple[<code class="xref py py-class docutils literal notranslate"><span class="pre">Animation</span></code>]</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.construct">
-<span class="sig-name descname"><span class="pre">construct</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.construct"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.construct" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">construct</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.construct"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.construct" title="永久链接至目标">#</a></dt>
 <dd><p>Add content to the Scene.</p>
 <p>From within <a class="reference internal" href="#manim.scene.scene.Scene.construct" title="manim.scene.scene.Scene.construct"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.construct()</span></code></a>, display mobjects on screen by calling
 <a class="reference internal" href="#manim.scene.scene.Scene.add" title="manim.scene.scene.Scene.add"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.add()</span></code></a> and remove them from screen by calling <a class="reference internal" href="#manim.scene.scene.Scene.remove" title="manim.scene.scene.Scene.remove"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.remove()</span></code></a>.
 All mobjects currently on screen are kept in <code class="xref py py-attr docutils literal notranslate"><span class="pre">Scene.mobjects</span></code>.  Play
 animations by calling <a class="reference internal" href="#manim.scene.scene.Scene.play" title="manim.scene.scene.Scene.play"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.play()</span></code></a>.</p>
-<p class="rubric">Notes</p>
+<p class="rubric">提示</p>
 <p>Initialization code should go in <a class="reference internal" href="#manim.scene.scene.Scene.setup" title="manim.scene.scene.Scene.setup"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.setup()</span></code></a>.  Termination code should
 go in <a class="reference internal" href="#manim.scene.scene.Scene.tear_down" title="manim.scene.scene.Scene.tear_down"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.tear_down()</span></code></a>.</p>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <p>A typical manim script includes a class derived from <a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code></a> with an
 overridden <code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.contruct()</span></code> method:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyScene</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
@@ -1247,99 +1247,99 @@ overridden <code class="xref py py-meth docutils literal notranslate"><span clas
 </pre></div>
 </div>
 <div class="admonition seealso">
-<p class="admonition-title">See also</p>
+<p class="admonition-title">参见</p>
 <p><a class="reference internal" href="#manim.scene.scene.Scene.setup" title="manim.scene.scene.Scene.setup"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.setup()</span></code></a>, <a class="reference internal" href="#manim.scene.scene.Scene.render" title="manim.scene.scene.Scene.render"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.render()</span></code></a>, <a class="reference internal" href="#manim.scene.scene.Scene.tear_down" title="manim.scene.scene.Scene.tear_down"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Scene.tear_down()</span></code></a></p>
 </div>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.get_attrs">
-<span class="sig-name descname"><span class="pre">get_attrs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">keys</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_attrs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_attrs" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_attrs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">keys</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_attrs"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_attrs" title="永久链接至目标">#</a></dt>
 <dd><p>Gets attributes of a scene given the attribute’s identifier/name.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>*keys</strong> (<em>str</em>) – Name(s) of the argument(s) to return the attribute of.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>List of attributes of the passed identifiers.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>list</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.get_mobject_family_members">
-<span class="sig-name descname"><span class="pre">get_mobject_family_members</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_mobject_family_members"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_mobject_family_members" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_mobject_family_members</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_mobject_family_members"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_mobject_family_members" title="永久链接至目标">#</a></dt>
 <dd><p>Returns list of family-members of all mobjects in scene.
 If a Circle() and a VGroup(Rectangle(),Triangle()) were added,
 it returns not only the Circle(), Rectangle() and Triangle(), but
 also the VGroup() object.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">返回</dt>
 <dd class="field-odd"><p>List of mobject family members.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p>list</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.get_moving_mobjects">
-<span class="sig-name descname"><span class="pre">get_moving_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">animations</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_moving_mobjects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_moving_mobjects" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_moving_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">animations</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_moving_mobjects"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_moving_mobjects" title="永久链接至目标">#</a></dt>
 <dd><p>Gets all moving mobjects in the passed animation(s).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>*animations</strong> (<a class="reference internal" href="manim.animation.animation.Animation.html#manim.animation.animation.Animation" title="manim.animation.animation.Animation"><em>Animation</em></a>) – The animations to check for moving mobjects.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The list of mobjects that could be moving in
 the Animation(s)</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>list</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.get_restructured_mobject_list">
-<span class="sig-name descname"><span class="pre">get_restructured_mobject_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobjects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_remove</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_restructured_mobject_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_restructured_mobject_list" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_restructured_mobject_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobjects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_remove</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_restructured_mobject_list"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_restructured_mobject_list" title="永久链接至目标">#</a></dt>
 <dd><p>Given a list of mobjects and a list of mobjects to be removed, this
 filters out the removable mobjects from the list of mobjects.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>mobjects</strong> (<em>list</em>) – The Mobjects to check.</p></li>
 <li><p><strong>to_remove</strong> (<em>list</em>) – The list of mobjects to remove.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The list of mobjects with the mobjects to remove removed.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>list</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.get_run_time">
-<span class="sig-name descname"><span class="pre">get_run_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">animations</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_run_time"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_run_time" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_run_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">animations</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_run_time"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_run_time" title="永久链接至目标">#</a></dt>
 <dd><p>Gets the total run time for a list of animations.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>animations</strong> (List[<code class="xref py py-class docutils literal notranslate"><span class="pre">Animation</span></code>, …]) – A list of the animations whose total
 <code class="docutils literal notranslate"><span class="pre">run_time</span></code> is to be calculated.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The total <code class="docutils literal notranslate"><span class="pre">run_time</span></code> of all of the animations in the list.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>float</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.get_time_progression">
-<span class="sig-name descname"><span class="pre">get_time_progression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_iterations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">override_skip_animations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_time_progression"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_time_progression" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_time_progression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_iterations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">override_skip_animations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_time_progression"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_time_progression" title="永久链接至目标">#</a></dt>
 <dd><p>You will hardly use this when making your own animations.
 This method is for Manim’s internal use.</p>
 <p>Returns a CommandLine ProgressBar whose <code class="docutils literal notranslate"><span class="pre">fill_time</span></code>
@@ -1348,90 +1348,90 @@ the iterations to perform in that animation
 and a bool saying whether or not to consider
 the skipped animations.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>run_time</strong> (<em>float</em>) – The <code class="docutils literal notranslate"><span class="pre">run_time</span></code> of the animation.</p></li>
 <li><p><strong>n_iterations</strong> (<em>int</em><em>, </em><em>optional</em>) – The number of iterations in the animation.</p></li>
 <li><p><strong>override_skip_animations</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether or not to show skipped animations in the progress bar.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The CommandLine Progress Bar.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>time_progression</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.get_top_level_mobjects">
-<span class="sig-name descname"><span class="pre">get_top_level_mobjects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_top_level_mobjects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_top_level_mobjects" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_top_level_mobjects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.get_top_level_mobjects"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.get_top_level_mobjects" title="永久链接至目标">#</a></dt>
 <dd><p>Returns all mobjects which are not submobjects.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">返回</dt>
 <dd class="field-odd"><p>List of top level mobjects.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p>list</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.interactive_embed">
-<span class="sig-name descname"><span class="pre">interactive_embed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.interactive_embed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.interactive_embed" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">interactive_embed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.interactive_embed"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.interactive_embed" title="永久链接至目标">#</a></dt>
 <dd><p>Like embed(), but allows for screen interaction.</p>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.is_current_animation_frozen_frame">
-<span class="sig-name descname"><span class="pre">is_current_animation_frozen_frame</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.is_current_animation_frozen_frame"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.is_current_animation_frozen_frame" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">is_current_animation_frozen_frame</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.is_current_animation_frozen_frame"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.is_current_animation_frozen_frame" title="永久链接至目标">#</a></dt>
 <dd><p>Returns whether the current animation produces a static frame (generally a Wait).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>bool</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.next_section">
-<span class="sig-name descname"><span class="pre">next_section</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unnamed'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DefaultSectionType.NORMAL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_animations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.next_section"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.next_section" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">next_section</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'unnamed'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DefaultSectionType.NORMAL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_animations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.next_section"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.next_section" title="永久链接至目标">#</a></dt>
 <dd><p>Create separation here; the last section gets finished and a new one gets created.
 <code class="docutils literal notranslate"><span class="pre">skip_animations</span></code> skips the rendering of all animations in this section.
 Refer to <a class="reference internal" href="../tutorials/a_deeper_look.html"><span class="doc">the documentation</span></a> on how to use sections.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> (<em>str</em>) – </p></li>
 <li><p><strong>type</strong> (<em>str</em>) – </p></li>
 <li><p><strong>skip_animations</strong> (<em>bool</em>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.pause">
-<span class="sig-name descname"><span class="pre">pause</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.pause"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.pause" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">pause</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.pause"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.pause" title="永久链接至目标">#</a></dt>
 <dd><p>Pauses the scene (i.e., displays a frozen frame).</p>
 <p>This is an alias for <a class="reference internal" href="#manim.scene.scene.Scene.wait" title="manim.scene.scene.Scene.wait"><code class="xref py py-meth docutils literal notranslate"><span class="pre">wait()</span></code></a> with <code class="docutils literal notranslate"><span class="pre">frozen_frame</span></code>
 set to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>duration</strong> (<em>float</em>) – The duration of the pause.</p>
 </dd>
 </dl>
 <div class="admonition seealso">
-<p class="admonition-title">See also</p>
+<p class="admonition-title">参见</p>
 <p><a class="reference internal" href="#manim.scene.scene.Scene.wait" title="manim.scene.scene.Scene.wait"><code class="xref py py-meth docutils literal notranslate"><span class="pre">wait()</span></code></a>, <a class="reference internal" href="manim.animation.animation.Wait.html#manim.animation.animation.Wait" title="manim.animation.animation.Wait"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wait</span></code></a></p>
 </div>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.play">
-<span class="sig-name descname"><span class="pre">play</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subcaption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subcaption_duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subcaption_offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.play"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.play" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">play</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subcaption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subcaption_duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subcaption_offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.play"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.play" title="永久链接至目标">#</a></dt>
 <dd><p>Plays an animation in this scene.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>args</strong> – Animations to be played.</p></li>
 <li><p><strong>subcaption</strong> – The content of the external subcaption that should
@@ -1448,12 +1448,12 @@ added subcaption.</p></li>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.play_internal">
-<span class="sig-name descname"><span class="pre">play_internal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">skip_rendering</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.play_internal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.play_internal" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">play_internal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">skip_rendering</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.play_internal"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.play_internal" title="永久链接至目标">#</a></dt>
 <dd><p>This method is used to prep the animations for rendering,
 apply the arguments and parameters required to them,
 render them, and write them to the video file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>args</strong> – Animation or mobject with mobject method and params</p></li>
 <li><p><strong>kwargs</strong> – named parameters affecting what was passed in <code class="docutils literal notranslate"><span class="pre">args</span></code>,
@@ -1464,63 +1464,63 @@ e.g. <code class="docutils literal notranslate"><span class="pre">run_time</span
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.remove">
-<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.remove"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.remove" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.remove"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.remove" title="永久链接至目标">#</a></dt>
 <dd><p>Removes mobjects in the passed list of mobjects
 from the scene and the foreground, by removing them
 from “mobjects” and “foreground_mobjects”</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>*mobjects</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><em>Mobject</em></a>) – The mobjects to remove.</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.remove_foreground_mobject">
-<span class="sig-name descname"><span class="pre">remove_foreground_mobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.remove_foreground_mobject"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.remove_foreground_mobject" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">remove_foreground_mobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.remove_foreground_mobject"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.remove_foreground_mobject" title="永久链接至目标">#</a></dt>
 <dd><p>Removes a single mobject from the foreground, and internally from the list
 foreground_mobjects.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>mobject</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><em>Mobject</em></a>) – The mobject to remove from the foreground.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The Scene, with the foreground mobject removed.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene">Scene</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.remove_foreground_mobjects">
-<span class="sig-name descname"><span class="pre">remove_foreground_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">to_remove</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.remove_foreground_mobjects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.remove_foreground_mobjects" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">remove_foreground_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">to_remove</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.remove_foreground_mobjects"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.remove_foreground_mobjects" title="永久链接至目标">#</a></dt>
 <dd><p>Removes mobjects from the foreground, and internally from the list
 foreground_mobjects.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>*to_remove</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><em>Mobject</em></a>) – The mobject(s) to remove from the foreground.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The Scene, with the foreground mobjects removed.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene">Scene</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.render">
-<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">preview</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.render"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.render" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">preview</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.render"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.render" title="永久链接至目标">#</a></dt>
 <dd><p>Renders this Scene.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>preview</strong> (<em>bool</em>) – If true, opens scene in a file viewer.</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.restructure_mobjects">
-<span class="sig-name descname"><span class="pre">restructure_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_remove</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mobject_list_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mobjects'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extract_families</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.restructure_mobjects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.restructure_mobjects" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">restructure_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_remove</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mobject_list_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mobjects'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extract_families</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.restructure_mobjects"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.restructure_mobjects" title="永久链接至目标">#</a></dt>
 <dd><dl class="simple">
 <dt>tl:wr</dt><dd><p>If your scene has a Group(), and you removed a mobject from the Group,
 this dissolves the group and puts the rest of the mobjects directly
@@ -1532,31 +1532,31 @@ of its submobjects is removed, e.g. scene.remove(m1), the list of mobjects
 will be edited to contain other submobjects, but not m1, e.g. it will now
 insert m2 and m3 to where the group once was.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>to_remove</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><em>Mobject</em></a>) – The Mobject to remove.</p></li>
 <li><p><strong>mobject_list_name</strong> (<em>str</em><em>, </em><em>optional</em>) – The list of mobjects (“mobjects”, “foreground_mobjects” etc) to remove from.</p></li>
 <li><p><strong>extract_families</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the mobject’s families should be recursively extracted.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The Scene mobject with restructured Mobjects.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.scene.scene.Scene" title="manim.scene.scene.Scene">Scene</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.setup">
-<span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.setup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.setup" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.setup"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.setup" title="永久链接至目标">#</a></dt>
 <dd><p>This is meant to be implemented by any scenes which
 are commonly subclassed, and have some common setup
 involved before the construct method is called.</p>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.should_update_mobjects">
-<span class="sig-name descname"><span class="pre">should_update_mobjects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.should_update_mobjects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.should_update_mobjects" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">should_update_mobjects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.should_update_mobjects"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.should_update_mobjects" title="永久链接至目标">#</a></dt>
 <dd><p>Returns True if the mobjects of this scene should be updated.</p>
 <p>In particular, this checks whether</p>
 <ul class="simple">
@@ -1567,34 +1567,34 @@ is set to <code class="docutils literal notranslate"><span class="pre">True</spa
 </ul>
 <p>This is only called when a single Wait animation is played.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>bool</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.tear_down">
-<span class="sig-name descname"><span class="pre">tear_down</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.tear_down"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.tear_down" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">tear_down</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.tear_down"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.tear_down" title="永久链接至目标">#</a></dt>
 <dd><p>This is meant to be implemented by any scenes which
 are commonly subclassed, and have some common method
 to be invoked before the scene ends.</p>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.update_mobjects">
-<span class="sig-name descname"><span class="pre">update_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dt</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.update_mobjects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.update_mobjects" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">update_mobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dt</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.update_mobjects"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.update_mobjects" title="永久链接至目标">#</a></dt>
 <dd><p>Begins updating all mobjects in the Scene.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>dt</strong> (<em>int</em><em> or </em><em>float</em>) – Change in time between updates. Defaults (mostly) to 1/frames_per_second</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.wait">
-<span class="sig-name descname"><span class="pre">wait</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_condition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frozen_frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.wait"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.wait" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">wait</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_condition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frozen_frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.wait"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.wait" title="永久链接至目标">#</a></dt>
 <dd><p>Plays a “no operation” animation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>duration</strong> (<em>float</em>) – The run time of the animation.</p></li>
 <li><p><strong>stop_condition</strong> (<em>Callable</em><em>[</em><em>[</em><em>]</em><em>, </em><em>bool</em><em>] </em><em>| </em><em>None</em>) – A function without positional arguments that is evaluated every time
@@ -1608,18 +1608,18 @@ determine whether or not the frame is frozen on its own.</p></li>
 </dd>
 </dl>
 <div class="admonition seealso">
-<p class="admonition-title">See also</p>
+<p class="admonition-title">参见</p>
 <p><a class="reference internal" href="manim.animation.animation.Wait.html#manim.animation.animation.Wait" title="manim.animation.animation.Wait"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wait</span></code></a>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">should_mobjects_update()</span></code></p>
 </div>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.scene.scene.Scene.wait_until">
-<span class="sig-name descname"><span class="pre">wait_until</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stop_condition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.wait_until"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.wait_until" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">wait_until</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stop_condition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/scene/scene.html#Scene.wait_until"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.scene.scene.Scene.wait_until" title="永久链接至目标">#</a></dt>
 <dd><p>Like a wrapper for wait().
 You pass a function that determines whether to continue waiting,
 and a max wait time if that is never fulfilled.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>stop_condition</strong> (<em>function</em>) – The function whose boolean return value determines whether to continue waiting</p></li>
 <li><p><strong>max_time</strong> (<em>int</em><em> or </em><em>float</em><em>, </em><em>optional</em>) – The maximum wait time in seconds, if the stop_condition is never fulfilled.</p></li>
@@ -1688,6 +1688,7 @@ and a max wait time if that is never fulfilled.</p>
     <script src="../_static/scripts/furo.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/responsiveSvg.js"></script>
     </body>
 </html>

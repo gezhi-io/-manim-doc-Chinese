@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="zh_CN">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
-  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Plugins" href="../plugins.html" /><link rel="prev" title="TexTemplateLibrary" href="manim.utils.tex_templates.TexTemplateLibrary.html" />
+  <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="插件" href="../plugins.html" /><link rel="prev" title="TexTemplateLibrary" href="manim.utils.tex_templates.TexTemplateLibrary.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
         <title>tex_file_writing - Manim Community v0.15.1</title>
@@ -200,7 +200,7 @@
   <span class="sidebar-brand-text">Manim Community v0.15.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -245,7 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">参考目录</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.animation.Animation.html">Animation</a></li>
@@ -731,8 +731,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -787,96 +787,96 @@
         </div>
         <article role="main">
           <section id="module-manim.utils.tex_file_writing">
-<span id="tex-file-writing"></span><h1>tex_file_writing<a class="headerlink" href="#module-manim.utils.tex_file_writing" title="Permalink to this headline">#</a></h1>
+<span id="tex-file-writing"></span><h1>tex_file_writing<a class="headerlink" href="#module-manim.utils.tex_file_writing" title="永久链接至标题">#</a></h1>
 <p>Interface for writing, compiling, and converting <code class="docutils literal notranslate"><span class="pre">.tex</span></code> files.</p>
 <div class="admonition seealso">
-<p class="admonition-title">See also</p>
+<p class="admonition-title">参见</p>
 <p><code class="xref py py-mod docutils literal notranslate"><span class="pre">mobject.svg.tex_mobject</span></code></p>
 </div>
 <p class="rubric">Functions</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.tex_file_writing.compile_tex">
-<span class="sig-name descname"><span class="pre">compile_tex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tex_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_compiler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_format</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#compile_tex"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.compile_tex" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">compile_tex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tex_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_compiler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_format</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#compile_tex"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.compile_tex" title="永久链接至目标">#</a></dt>
 <dd><p>Compiles a tex_file into a .dvi or a .xdv or a .pdf</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>tex_file</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – File name of TeX file to be typeset.</p></li>
 <li><p><strong>tex_compiler</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – String containing the compiler to be used, e.g. <code class="docutils literal notranslate"><span class="pre">pdflatex</span></code> or <code class="docutils literal notranslate"><span class="pre">lualatex</span></code></p></li>
 <li><p><strong>output_format</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – String containing the output format generated by the compiler, e.g. <code class="docutils literal notranslate"><span class="pre">.dvi</span></code> or <code class="docutils literal notranslate"><span class="pre">.pdf</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>Path to generated output file in desired format (DVI, XDV or PDF).</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.tex_file_writing.convert_to_svg">
-<span class="sig-name descname"><span class="pre">convert_to_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dvi_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#convert_to_svg"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.convert_to_svg" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">convert_to_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dvi_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#convert_to_svg"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.convert_to_svg" title="永久链接至目标">#</a></dt>
 <dd><p>Converts a .dvi, .xdv, or .pdf file into an svg using dvisvgm.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dvi_file</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – File name of the input file to be converted.</p></li>
 <li><p><strong>extension</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – String containing the file extension and thus indicating the file type, e.g. <code class="docutils literal notranslate"><span class="pre">.dvi</span></code> or <code class="docutils literal notranslate"><span class="pre">.pdf</span></code></p></li>
 <li><p><strong>page</strong> (Optional[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], optional) – Page to be converted if input file is multi-page.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>Path to generated SVG file.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.tex_file_writing.generate_tex_file">
-<span class="sig-name descname"><span class="pre">generate_tex_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expression</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_template</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#generate_tex_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.generate_tex_file" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">generate_tex_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expression</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_template</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#generate_tex_file"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.generate_tex_file" title="永久链接至目标">#</a></dt>
 <dd><p>Takes a tex expression (and an optional tex environment),
 and returns a fully formed tex file ready for compilation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>expression</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – String containing the TeX expression to be rendered, e.g. <code class="docutils literal notranslate"><span class="pre">\sqrt{2}</span></code> or <code class="docutils literal notranslate"><span class="pre">foo</span></code></p></li>
 <li><p><strong>environment</strong> (Optional[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], optional) – The string containing the environment in which the expression should be typeset, e.g. <code class="docutils literal notranslate"><span class="pre">align*</span></code></p></li>
 <li><p><strong>tex_template</strong> (Optional[<a class="reference internal" href="manim.utils.tex.TexTemplate.html#manim.utils.tex.TexTemplate" title="manim.utils.tex.TexTemplate"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexTemplate</span></code></a>], optional) – Template class used to typesetting. If not set, use default template set via <cite>config[“tex_template”]</cite></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>Path to generated TeX file</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.tex_file_writing.insight_inputenc_error">
-<span class="sig-name descname"><span class="pre">insight_inputenc_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matching</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#insight_inputenc_error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.insight_inputenc_error" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">insight_inputenc_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matching</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#insight_inputenc_error"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.insight_inputenc_error" title="永久链接至目标">#</a></dt>
 <dd></dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.tex_file_writing.insight_package_not_found_error">
-<span class="sig-name descname"><span class="pre">insight_package_not_found_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matching</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#insight_package_not_found_error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.insight_package_not_found_error" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">insight_package_not_found_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matching</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#insight_package_not_found_error"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.insight_package_not_found_error" title="永久链接至目标">#</a></dt>
 <dd></dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.tex_file_writing.print_all_tex_errors">
-<span class="sig-name descname"><span class="pre">print_all_tex_errors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_compiler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#print_all_tex_errors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.print_all_tex_errors" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">print_all_tex_errors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_compiler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#print_all_tex_errors"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.print_all_tex_errors" title="永久链接至目标">#</a></dt>
 <dd></dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.tex_file_writing.print_tex_error">
-<span class="sig-name descname"><span class="pre">print_tex_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tex_compilation_log</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_start_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_source</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#print_tex_error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.print_tex_error" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">print_tex_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tex_compilation_log</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_start_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_source</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#print_tex_error"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.print_tex_error" title="永久链接至目标">#</a></dt>
 <dd></dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.tex_file_writing.tex_compilation_command">
-<span class="sig-name descname"><span class="pre">tex_compilation_command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tex_compiler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_dir</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#tex_compilation_command"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.tex_compilation_command" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">tex_compilation_command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tex_compiler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_dir</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#tex_compilation_command"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.tex_compilation_command" title="永久链接至目标">#</a></dt>
 <dd><p>Prepares the tex compilation command with all necessary cli flags</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>tex_compiler</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – String containing the compiler to be used, e.g. <code class="docutils literal notranslate"><span class="pre">pdflatex</span></code> or <code class="docutils literal notranslate"><span class="pre">lualatex</span></code></p></li>
 <li><p><strong>output_format</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – String containing the output format generated by the compiler, e.g. <code class="docutils literal notranslate"><span class="pre">.dvi</span></code> or <code class="docutils literal notranslate"><span class="pre">.pdf</span></code></p></li>
@@ -884,34 +884,34 @@ and returns a fully formed tex file ready for compilation.</p>
 <li><p><strong>tex_dir</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Path to the directory where compiler output will be stored.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>Compilation command according to given parameters</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.tex_file_writing.tex_hash">
-<span class="sig-name descname"><span class="pre">tex_hash</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expression</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#tex_hash"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.tex_hash" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">tex_hash</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expression</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#tex_hash"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.tex_hash" title="永久链接至目标">#</a></dt>
 <dd></dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.tex_file_writing.tex_to_svg_file">
-<span class="sig-name descname"><span class="pre">tex_to_svg_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expression</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_template</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#tex_to_svg_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.tex_to_svg_file" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">tex_to_svg_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expression</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tex_template</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/tex_file_writing.html#tex_to_svg_file"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.tex_file_writing.tex_to_svg_file" title="永久链接至目标">#</a></dt>
 <dd><p>Takes a tex expression and returns the svg version of the compiled tex</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>expression</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – String containing the TeX expression to be rendered, e.g. <code class="docutils literal notranslate"><span class="pre">\sqrt{2}</span></code> or <code class="docutils literal notranslate"><span class="pre">foo</span></code></p></li>
 <li><p><strong>environment</strong> (Optional[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], optional) – The string containing the environment in which the expression should be typeset, e.g. <code class="docutils literal notranslate"><span class="pre">align*</span></code></p></li>
 <li><p><strong>tex_template</strong> (Optional[<a class="reference internal" href="manim.utils.tex.TexTemplate.html#manim.utils.tex.TexTemplate" title="manim.utils.tex.TexTemplate"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexTemplate</span></code></a>], optional) – Template class used to typesetting. If not set, use default template set via <cite>config[“tex_template”]</cite></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>Path to generated SVG file.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
 </dd>
 </dl>
@@ -928,7 +928,7 @@ and returns a fully formed tex file ready for compilation.</p>
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Plugins</div>
+                <div class="title">插件</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -976,6 +976,7 @@ and returns a fully formed tex file ready for compilation.</p>
     <script src="../_static/scripts/furo.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/responsiveSvg.js"></script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="zh_CN">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
-  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="graphing" href="manim.mobject.graphing.html" /><link rel="prev" title="graph" href="manim.mobject.graph.html" />
+  <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="graphing" href="manim.mobject.graphing.html" /><link rel="prev" title="graph" href="manim.mobject.graph.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
         <title>Graph - Manim Community v0.15.1</title>
@@ -200,7 +200,7 @@
   <span class="sidebar-brand-text">Manim Community v0.15.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -245,7 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">参考目录</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.animation.Animation.html">Animation</a></li>
@@ -731,8 +731,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -787,23 +787,23 @@
         </div>
         <article role="main">
           <section id="graph">
-<h1>Graph<a class="headerlink" href="#graph" title="Permalink to this headline">#</a></h1>
+<h1>Graph<a class="headerlink" href="#graph" title="永久链接至标题">#</a></h1>
 <p>Qualified name: <code class="docutils literal notranslate"><span class="pre">manim.mobject.graph.Graph</span></code></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="manim.mobject.graph.Graph">
-<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">vertices</span></em>, <em class="sig-param"><span class="pre">edges</span></em>, <em class="sig-param"><span class="pre">labels=False</span></em>, <em class="sig-param"><span class="pre">label_fill_color='#000000'</span></em>, <em class="sig-param"><span class="pre">layout='spring'</span></em>, <em class="sig-param"><span class="pre">layout_scale=2</span></em>, <em class="sig-param"><span class="pre">layout_config=None</span></em>, <em class="sig-param"><span class="pre">vertex_type=&lt;class</span> <span class="pre">'manim.mobject.geometry.arc.Dot'&gt;</span></em>, <em class="sig-param"><span class="pre">vertex_config=None</span></em>, <em class="sig-param"><span class="pre">vertex_mobjects=None</span></em>, <em class="sig-param"><span class="pre">edge_type=&lt;class</span> <span class="pre">'manim.mobject.geometry.line.Line'&gt;</span></em>, <em class="sig-param"><span class="pre">partitions=None</span></em>, <em class="sig-param"><span class="pre">root_vertex=None</span></em>, <em class="sig-param"><span class="pre">edge_config=None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="manim.mobject.types.vectorized_mobject.VMobject.html#manim.mobject.types.vectorized_mobject.VMobject" title="manim.mobject.types.vectorized_mobject.VMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">manim.mobject.types.vectorized_mobject.VMobject</span></code></a></p>
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">vertices</span></em>, <em class="sig-param"><span class="pre">edges</span></em>, <em class="sig-param"><span class="pre">labels=False</span></em>, <em class="sig-param"><span class="pre">label_fill_color='#000000'</span></em>, <em class="sig-param"><span class="pre">layout='spring'</span></em>, <em class="sig-param"><span class="pre">layout_scale=2</span></em>, <em class="sig-param"><span class="pre">layout_config=None</span></em>, <em class="sig-param"><span class="pre">vertex_type=&lt;class</span> <span class="pre">'manim.mobject.geometry.arc.Dot'&gt;</span></em>, <em class="sig-param"><span class="pre">vertex_config=None</span></em>, <em class="sig-param"><span class="pre">vertex_mobjects=None</span></em>, <em class="sig-param"><span class="pre">edge_type=&lt;class</span> <span class="pre">'manim.mobject.geometry.line.Line'&gt;</span></em>, <em class="sig-param"><span class="pre">partitions=None</span></em>, <em class="sig-param"><span class="pre">root_vertex=None</span></em>, <em class="sig-param"><span class="pre">edge_config=None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph" title="永久链接至目标">#</a></dt>
+<dd><p>基类：<a class="reference internal" href="manim.mobject.types.vectorized_mobject.VMobject.html#manim.mobject.types.vectorized_mobject.VMobject" title="manim.mobject.types.vectorized_mobject.VMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">manim.mobject.types.vectorized_mobject.VMobject</span></code></a></p>
 <p>An undirected graph (that is, a collection of vertices connected with edges).</p>
 <p>Graphs can be instantiated by passing both a list of (distinct, hashable)
 vertex names, together with list of edges (as tuples of vertex names). See
 the examples below for details.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">注解</p>
 <p>This implementation uses updaters to make the edges move with
 the vertices.</p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>vertices</strong> (<em>list</em><em>[</em><em>Hashable</em><em>]</em>) – A list of vertices. Must be hashable elements.</p></li>
 <li><p><strong>edges</strong> (<em>list</em><em>[</em><em>tuple</em><em>[</em><em>Hashable</em><em>, </em><em>Hashable</em><em>]</em><em>]</em>) – A list of edges, specified as tuples <code class="docutils literal notranslate"><span class="pre">(u,</span> <span class="pre">v)</span></code> where both <code class="docutils literal notranslate"><span class="pre">u</span></code>
@@ -854,11 +854,11 @@ keyword arguments for the mobject related to the corresponding edge.</p></li>
 <li><p><strong>root_vertex</strong> (<em>Hashable</em><em> | </em><em>None</em>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <p>First, we create a small graph and demonstrate that the edges move
 together with the vertices.</p>
 <div class="admonition admonition-manim-example" id="movingvertices">
@@ -918,7 +918,7 @@ together with the vertices.</p>
 and edges can be modified both by default and for specific vertices and
 edges.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">注解</p>
 <p>In <code class="docutils literal notranslate"><span class="pre">edge_config</span></code>, edges can be passed in both directions: if
 <code class="docutils literal notranslate"><span class="pre">(u,</span> <span class="pre">v)</span></code> is an edge in the graph, both <code class="docutils literal notranslate"><span class="pre">(u,</span> <span class="pre">v)</span></code> as well
 as <code class="docutils literal notranslate"><span class="pre">(v,</span> <span class="pre">u)</span></code> can be used as keys in the dictionary.</p>
@@ -944,7 +944,7 @@ as <code class="docutils literal notranslate"><span class="pre">(v,</span> <span
 </div><p>You can also lay out a partite graph on columns by specifying
 a list of the vertices on each side and choosing the partite layout.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">注解</p>
 <p>All vertices in your graph which are not listed in any of the partitions
 are collected in their own partition and rendered in the rightmost column.</p>
 </div>
@@ -1077,13 +1077,13 @@ zoom out by using a <a class="reference internal" href="manim.scene.moving_camer
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">depth</span></code></p></td>
-<td><p>The depth of the mobject.</p></td>
+<td><p>Mobject 的深度。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fill_color</span></code></p></td>
 <td><p>If there are multiple colors (for gradient) this returns the first one</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">height</span></code></p></td>
-<td><p>The height of the mobject.</p></td>
+<td><p>Mobject 的高度。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sheen_factor</span></code></p></td>
 <td><p></p></td>
@@ -1098,10 +1098,10 @@ zoom out by using a <a class="reference internal" href="manim.scene.moving_camer
 </table></div>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.graph.Graph.add_edges">
-<span class="sig-name descname"><span class="pre">add_edges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*edges</span></em>, <em class="sig-param"><span class="pre">edge_type=&lt;class</span> <span class="pre">'manim.mobject.geometry.line.Line'&gt;</span></em>, <em class="sig-param"><span class="pre">edge_config=None</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.add_edges"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.add_edges" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">add_edges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*edges</span></em>, <em class="sig-param"><span class="pre">edge_type=&lt;class</span> <span class="pre">'manim.mobject.geometry.line.Line'&gt;</span></em>, <em class="sig-param"><span class="pre">edge_config=None</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.add_edges"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.add_edges" title="永久链接至目标">#</a></dt>
 <dd><p>Add new edges to the graph.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>edges</strong> (<em>tuple</em><em>[</em><em>Hashable</em><em>, </em><em>Hashable</em><em>]</em>) – Edges (as tuples of vertex identifiers) to be added. If a non-existing
 vertex is passed, a new vertex with default settings will be created. Create
@@ -1116,20 +1116,20 @@ of the corresponding edge.</p></li>
 which is used to create new vertices in the passed edges.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>A group containing all newly added vertices and edges.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="manim.mobject.mobject.Group.html#manim.mobject.mobject.Group" title="manim.mobject.mobject.Group">Group</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.graph.Graph.add_vertices">
-<span class="sig-name descname"><span class="pre">add_vertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*vertices</span></em>, <em class="sig-param"><span class="pre">positions=None</span></em>, <em class="sig-param"><span class="pre">labels=False</span></em>, <em class="sig-param"><span class="pre">label_fill_color='#000000'</span></em>, <em class="sig-param"><span class="pre">vertex_type=&lt;class</span> <span class="pre">'manim.mobject.geometry.arc.Dot'&gt;</span></em>, <em class="sig-param"><span class="pre">vertex_config=None</span></em>, <em class="sig-param"><span class="pre">vertex_mobjects=None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.add_vertices"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.add_vertices" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">add_vertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*vertices</span></em>, <em class="sig-param"><span class="pre">positions=None</span></em>, <em class="sig-param"><span class="pre">labels=False</span></em>, <em class="sig-param"><span class="pre">label_fill_color='#000000'</span></em>, <em class="sig-param"><span class="pre">vertex_type=&lt;class</span> <span class="pre">'manim.mobject.geometry.arc.Dot'&gt;</span></em>, <em class="sig-param"><span class="pre">vertex_config=None</span></em>, <em class="sig-param"><span class="pre">vertex_mobjects=None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.add_vertices"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.add_vertices" title="永久链接至目标">#</a></dt>
 <dd><p>Add a list of vertices to the graph.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>vertices</strong> (<em>Hashable</em>) – Hashable vertex identifiers.</p></li>
 <li><p><strong>positions</strong> (<em>dict</em><em> | </em><em>None</em>) – A dictionary specifying the coordinates where the new vertices should be added.
@@ -1153,11 +1153,11 @@ all other vertex customization options.</p></li>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.graph.Graph.change_layout">
-<span class="sig-name descname"><span class="pre">change_layout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'spring'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partitions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_vertex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.change_layout"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.change_layout" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">change_layout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'spring'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partitions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_vertex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.change_layout"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.change_layout" title="永久链接至目标">#</a></dt>
 <dd><p>Change the layout of this graph.</p>
 <p>See the documentation of <a class="reference internal" href="#manim.mobject.graph.Graph" title="manim.mobject.graph.Graph"><code class="xref py py-class docutils literal notranslate"><span class="pre">Graph</span></code></a> for details about the
 keyword arguments.</p>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <div class="admonition admonition-manim-example" id="changegraphlayout">
 <p class="admonition-title">Example: ChangeGraphLayout <a class="headerlink" href="#changegraphlayout">¶</a></p><video autoplay="" class="manim-video" controls="" loop="" src="./ChangeGraphLayout-1.mp4"></video><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manim</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -1173,7 +1173,7 @@ keyword arguments.</p>
 </pre></div>
 </div>
 </div><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>layout</strong> (<em>str</em><em> | </em><em>dict</em>) – </p></li>
 <li><p><strong>layout_scale</strong> (<em>float</em>) – </p></li>
@@ -1182,27 +1182,27 @@ keyword arguments.</p>
 <li><p><strong>root_vertex</strong> (<em>Hashable</em><em> | </em><em>None</em>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p><a class="reference internal" href="#manim.mobject.graph.Graph" title="manim.mobject.graph.Graph">Graph</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.graph.Graph.from_networkx">
-<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">from_networkx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nxgraph</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.from_networkx"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.from_networkx" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">from_networkx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nxgraph</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.from_networkx"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.from_networkx" title="永久链接至目标">#</a></dt>
 <dd><p>Build a <a class="reference internal" href="#manim.mobject.graph.Graph" title="manim.mobject.graph.Graph"><code class="xref py py-class docutils literal notranslate"><span class="pre">Graph</span></code></a> from a given <code class="docutils literal notranslate"><span class="pre">networkx</span></code> graph.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>nxgraph</strong> (<em>networkx.classes.graph.Graph</em>) – A <code class="docutils literal notranslate"><span class="pre">networkx</span></code> graph.</p></li>
 <li><p><strong>**kwargs</strong> – Keywords to be passed to the constructor of <a class="reference internal" href="#manim.mobject.graph.Graph" title="manim.mobject.graph.Graph"><code class="xref py py-class docutils literal notranslate"><span class="pre">Graph</span></code></a>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p><a class="reference internal" href="#manim.mobject.graph.Graph" title="manim.mobject.graph.Graph">manim.mobject.graph.Graph</a></p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <div class="admonition admonition-manim-example" id="importnetworkxgraph">
 <p class="admonition-title">Example: ImportNetworkxGraph <a class="headerlink" href="#importnetworkxgraph">¶</a></p><video autoplay="" class="manim-video" controls="" loop="" src="./ImportNetworkxGraph-1.mp4"></video><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manim</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -1223,30 +1223,30 @@ keyword arguments.</p>
 </div></dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.graph.Graph.remove_edges">
-<span class="sig-name descname"><span class="pre">remove_edges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">edges</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.remove_edges"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.remove_edges" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">remove_edges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">edges</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.remove_edges"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.remove_edges" title="永久链接至目标">#</a></dt>
 <dd><p>Remove several edges from the graph.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>edges</strong> (<em>tuple</em>) – Edges to be removed from the graph.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>A group containing all removed edges.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="manim.mobject.mobject.Group.html#manim.mobject.mobject.Group" title="manim.mobject.mobject.Group">Group</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.graph.Graph.remove_vertices">
-<span class="sig-name descname"><span class="pre">remove_vertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">vertices</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.remove_vertices"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.remove_vertices" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">remove_vertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">vertices</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/graph.html#Graph.remove_vertices"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.graph.Graph.remove_vertices" title="永久链接至目标">#</a></dt>
 <dd><p>Remove several vertices from the graph.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>vertices</strong> – Vertices to be removed from the graph.</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">G</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">removed</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">remove_vertices</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="n">removed</span>
 <span class="go">VGroup(Line, Line, Dot, Dot)</span>
@@ -1316,6 +1316,7 @@ keyword arguments.</p>
     <script src="../_static/scripts/furo.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/responsiveSvg.js"></script>
     </body>
 </html>

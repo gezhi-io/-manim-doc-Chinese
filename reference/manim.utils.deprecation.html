@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="zh_CN">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
-  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="debug" href="manim.utils.debug.html" /><link rel="prev" title="DictAsObject" href="manim.utils.config_ops.DictAsObject.html" />
+  <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="debug" href="manim.utils.debug.html" /><link rel="prev" title="DictAsObject" href="manim.utils.config_ops.DictAsObject.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
         <title>deprecation - Manim Community v0.15.1</title>
@@ -200,7 +200,7 @@
   <span class="sidebar-brand-text">Manim Community v0.15.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -245,7 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">参考目录</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.animation.Animation.html">Animation</a></li>
@@ -731,8 +731,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -787,17 +787,17 @@
         </div>
         <article role="main">
           <section id="module-manim.utils.deprecation">
-<span id="deprecation"></span><h1>deprecation<a class="headerlink" href="#module-manim.utils.deprecation" title="Permalink to this headline">#</a></h1>
+<span id="deprecation"></span><h1>deprecation<a class="headerlink" href="#module-manim.utils.deprecation" title="永久链接至标题">#</a></h1>
 <p>Decorators for deprecating classes, functions and function parameters.</p>
 <p class="rubric">Functions</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.deprecation.deprecated">
-<span class="sig-name descname"><span class="pre">deprecated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">since</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">until</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/deprecation.html#deprecated"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.deprecation.deprecated" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">deprecated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">since</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">until</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/deprecation.html#deprecated"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.deprecation.deprecated" title="永久链接至目标">#</a></dt>
 <dd><p>Decorator to mark a callable as deprecated.</p>
 <p>The decorated callable will cause a warning when used. The docstring of the
 deprecated callable is adjusted to indicate that this callable is deprecated.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>func</strong> (<em>Callable</em>) – The function to be decorated. Should not be set by the user.</p></li>
 <li><p><strong>since</strong> (<em>str</em><em> | </em><em>None</em>) – The version or date since deprecation.</p></li>
@@ -806,14 +806,14 @@ deprecated callable is adjusted to indicate that this callable is deprecated.</p
 <li><p><strong>message</strong> (<em>str</em><em> | </em><em>None</em>) – The reason for why the callable has been deprecated.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The decorated callable.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>Callable</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <p>Basic usage:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manim.utils.deprecation</span> <span class="kn">import</span> <span class="n">deprecated</span>
 
@@ -870,12 +870,12 @@ deprecated callable is adjusted to indicate that this callable is deprecated.</p
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="manim.utils.deprecation.deprecated_params">
-<span class="sig-name descname"><span class="pre">deprecated_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">since</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">until</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redirections</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/deprecation.html#deprecated_params"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.utils.deprecation.deprecated_params" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">deprecated_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">since</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">until</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redirections</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/utils/deprecation.html#deprecated_params"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.utils.deprecation.deprecated_params" title="永久链接至目标">#</a></dt>
 <dd><p>Decorator to mark parameters of a callable as deprecated.</p>
 <p>It can also be used to automatically redirect deprecated parameter values to their
 replacements.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>params</strong> (<em>str</em><em> | </em><em>Iterable</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – <p>The parameters to be deprecated. Can consist of:</p>
 <ul>
@@ -899,20 +899,20 @@ return a dictionary which contains the redirected arguments.</p></li>
 </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The decorated callable.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>Callable</p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">引发</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>ValueError</strong> – If no parameters are defined (neither explicitly nor implicitly).</p></li>
 <li><p><strong>ValueError</strong> – If defined parameters are invalid python identifiers.</p></li>
 </ul>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <p>Basic usage:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manim.utils.deprecation</span> <span class="kn">import</span> <span class="n">deprecated_params</span>
 
@@ -1067,6 +1067,7 @@ return a dictionary which contains the redirected arguments.</p></li>
     <script src="../_static/scripts/furo.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/responsiveSvg.js"></script>
     </body>
 </html>

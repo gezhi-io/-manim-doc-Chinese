@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="zh_CN">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
-  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Improving performance" href="performance.html" /><link rel="prev" title="Adding Admonitions" href="admonitions.html" />
+  <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Improving performance" href="performance.html" /><link rel="prev" title="Adding Admonitions" href="admonitions.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
         <title>Adding Tests - Manim Community v0.15.1</title>
@@ -200,7 +200,7 @@
   <span class="sidebar-brand-text">Manim Community v0.15.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -245,7 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../reference.html">参考目录</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../reference/manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../reference/manim.animation.animation.Animation.html">Animation</a></li>
@@ -731,8 +731,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -787,12 +787,12 @@
         </div>
         <article role="main">
           <section id="adding-tests">
-<h1>Adding Tests<a class="headerlink" href="#adding-tests" title="Permalink to this headline">#</a></h1>
+<h1>Adding Tests<a class="headerlink" href="#adding-tests" title="永久链接至标题">#</a></h1>
 <p>If you are adding new features to manim, you should add appropriate tests for them. Tests prevent
 manim from breaking at each change by checking that no other
 feature has been broken and/or been unintentionally modified.</p>
 <section id="how-manim-tests">
-<h2>How Manim tests<a class="headerlink" href="#how-manim-tests" title="Permalink to this headline">#</a></h2>
+<h2>How Manim tests<a class="headerlink" href="#how-manim-tests" title="永久链接至标题">#</a></h2>
 <p>Manim uses pytest as its testing framework.
 To start the testing process, go to the root directory of the project and run pytest in your terminal.
 Any errors that occur during testing will be displayed in the terminal.</p>
@@ -804,7 +804,7 @@ Any errors that occur during testing will be displayed in the terminal.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">--show_diff</span></code> will show a visual comparison in case a unit test is failing.</p></li>
 </ul>
 <section id="how-it-works">
-<h3>How it Works<a class="headerlink" href="#how-it-works" title="Permalink to this headline">#</a></h3>
+<h3>How it Works<a class="headerlink" href="#how-it-works" title="永久链接至标题">#</a></h3>
 <p>At the moment there are three types of tests:</p>
 <ol class="arabic">
 <li><p>Unit Tests:</p>
@@ -827,7 +827,7 @@ ffmpeg). Therefore, we only compare video configuration values, exported in
 </section>
 </section>
 <section id="architecture">
-<h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">#</a></h2>
+<h2>Architecture<a class="headerlink" href="#architecture" title="永久链接至标题">#</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">manim/tests</span></code> directory looks like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.
 ├── conftest.py
@@ -896,7 +896,7 @@ ffmpeg). Therefore, we only compare video configuration values, exported in
 </div>
 </section>
 <section id="the-main-directories">
-<h2>The Main Directories<a class="headerlink" href="#the-main-directories" title="Permalink to this headline">#</a></h2>
+<h2>The Main Directories<a class="headerlink" href="#the-main-directories" title="永久链接至标题">#</a></h2>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">control_data/</span></code>:</p>
 <p>The directory containing control data. <code class="docutils literal notranslate"><span class="pre">control_data/graphical_units_data/</span></code> contains the expected and correct frame data for graphical tests, and
@@ -912,7 +912,7 @@ flags (end-to-end tests).</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">utils/</span></code>:</p>
 <p>Useful internal functions used by pytest.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">注解</p>
 <p>fixtures are not contained here, they are in <code class="docutils literal notranslate"><span class="pre">conftest.py</span></code>.</p>
 </div>
 </li>
@@ -922,16 +922,16 @@ flags (end-to-end tests).</p>
 </ul>
 </section>
 <section id="adding-a-new-test">
-<h2>Adding a New Test<a class="headerlink" href="#adding-a-new-test" title="Permalink to this headline">#</a></h2>
+<h2>Adding a New Test<a class="headerlink" href="#adding-a-new-test" title="永久链接至标题">#</a></h2>
 <section id="unit-tests">
-<h3>Unit Tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline">#</a></h3>
+<h3>Unit Tests<a class="headerlink" href="#unit-tests" title="永久链接至标题">#</a></h3>
 <p>Pytest determines which functions are tests by searching for files whose
 names begin with “test_”, and then within those files for functions
 beginning with “test” and classes beginning with “Test”. These kinds of
 tests must be in <code class="docutils literal notranslate"><span class="pre">tests/</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">tests/test_container.py</span></code>).</p>
 </section>
 <section id="graphical-unit-test">
-<h3>Graphical Unit Test<a class="headerlink" href="#graphical-unit-test" title="Permalink to this headline">#</a></h3>
+<h3>Graphical Unit Test<a class="headerlink" href="#graphical-unit-test" title="永久链接至标题">#</a></h3>
 <p>The test must be written in the correct file (i.e. the file that corresponds to the appropriate category the feature belongs to) and follow the structure
 of unit tests.</p>
 <p>For example, to test the <code class="docutils literal notranslate"><span class="pre">Circle</span></code> VMobject which resides in
@@ -939,7 +939,7 @@ of unit tests.</p>
 <code class="docutils literal notranslate"><span class="pre">test/test_geometry.py</span></code>.</p>
 <p>The name of the module is indicated by the variable __module_test__, that <strong>must</strong> be declared in any graphical test file. The module name is used to store the graphical control data.</p>
 <div class="admonition important">
-<p class="admonition-title">Important</p>
+<p class="admonition-title">重要</p>
 <p>You will need to use the <code class="docutils literal notranslate"><span class="pre">frames_comparison</span></code> decorator to create a test. The test function <strong>must</strong> accept a
 parameter named <code class="docutils literal notranslate"><span class="pre">scene</span></code> that will be used like <code class="docutils literal notranslate"><span class="pre">self</span></code> in a standard <code class="docutils literal notranslate"><span class="pre">construct</span></code> method.</p>
 </div>
@@ -973,7 +973,7 @@ parameter named <code class="docutils literal notranslate"><span class="pre">sce
 <p>Feel free to check the documentation of <code class="docutils literal notranslate"><span class="pre">@frames_comparison</span></code> for more.</p>
 <p>Note that tests name must follow the syntax <code class="docutils literal notranslate"><span class="pre">test_&lt;thing_to_test&gt;</span></code>, otherwise pytest will not recognize it as a test.</p>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<p class="admonition-title">警告</p>
 <p>If you run pytest now, you will get a <code class="docutils literal notranslate"><span class="pre">FileNotFound</span></code> error. This is because
 you have not created control data for your test.</p>
 </div>
@@ -986,7 +986,7 @@ For the example above, it would be</p>
 <p>Please make sure to add the control data to git as soon as it is produced with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">&lt;your-control-data.npz&gt;</span></code>.</p>
 </section>
 <section id="videos-tests">
-<h3>Videos tests<a class="headerlink" href="#videos-tests" title="Permalink to this headline">#</a></h3>
+<h3>Videos tests<a class="headerlink" href="#videos-tests" title="永久链接至标题">#</a></h3>
 <p>To test videos generated, we use the decorator
 <code class="docutils literal notranslate"><span class="pre">tests.utils.videos_tester.video_comparison</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@video_comparison</span><span class="p">(</span>
@@ -1009,7 +1009,7 @@ For the example above, it would be</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">注解</p>
 <p><code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">exit*\</span> <span class="pre">code</span> <span class="pre">==</span> <span class="pre">0,</span> <span class="pre">err</span></code> is used in case of the command fails
 to run. The decorator takes two arguments: json name and the path
 to where the video should be generated, starting from the <code class="docutils literal notranslate"><span class="pre">media/</span></code> dir.</p>
@@ -1103,7 +1103,7 @@ look like this:</p>
       <div class="toc-sticky toc-scroll">
         <div class="toc-title-container">
           <span class="toc-title">
-            Contents
+            目录
           </span>
         </div>
         <div class="toc-tree-container">
@@ -1140,6 +1140,7 @@ look like this:</p>
     <script src="../_static/scripts/furo.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/responsiveSvg.js"></script>
     </body>
 </html>

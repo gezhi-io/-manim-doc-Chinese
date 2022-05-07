@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="zh_CN">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://www.manim.community/logo.png" />
   
 <meta property="og:image:alt" content="Manim Community | Documentation" />
-  <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Scenes" href="../reference_index/scenes.html" /><link rel="prev" title="StreamLines" href="manim.mobject.vector_field.StreamLines.html" />
+  <link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Scenes" href="../reference_index/scenes.html" /><link rel="prev" title="StreamLines" href="manim.mobject.vector_field.StreamLines.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2022.04.07"/>
         <title>VectorField - Manim Community v0.15.1</title>
@@ -200,7 +200,7 @@
   <span class="sidebar-brand-text">Manim Community v0.15.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder=搜索 name="q" aria-label="搜索">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -245,7 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.0-changelog.html">v0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">参考目录</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../reference_index/animations.html">Animations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="manim.animation.animation.html">animation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="manim.animation.animation.Animation.html">Animation</a></li>
@@ -731,8 +731,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">Reporting bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">插件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reporting_bugs.html">报告Bug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../internals.html">Internal structure</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../contributing/development.html">Manim Development Process</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -787,18 +787,18 @@
         </div>
         <article role="main">
           <section id="vectorfield">
-<h1>VectorField<a class="headerlink" href="#vectorfield" title="Permalink to this headline">#</a></h1>
+<h1>VectorField<a class="headerlink" href="#vectorfield" title="永久链接至标题">#</a></h1>
 <p>Qualified name: <code class="docutils literal notranslate"><span class="pre">manim.mobject.vector\_field.VectorField</span></code></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="manim.mobject.vector_field.VectorField">
-<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">VectorField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_scheme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_color_scheme_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_color_scheme_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['#236B8E',</span> <span class="pre">'#83C167',</span> <span class="pre">'#FFFF00',</span> <span class="pre">'#FC6255']</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="manim.mobject.types.vectorized_mobject.VGroup.html#manim.mobject.types.vectorized_mobject.VGroup" title="manim.mobject.types.vectorized_mobject.VGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">manim.mobject.types.vectorized_mobject.VGroup</span></code></a></p>
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">VectorField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_scheme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_color_scheme_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_color_scheme_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['#236B8E',</span> <span class="pre">'#83C167',</span> <span class="pre">'#FFFF00',</span> <span class="pre">'#FC6255']</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField" title="永久链接至目标">#</a></dt>
+<dd><p>基类：<a class="reference internal" href="manim.mobject.types.vectorized_mobject.VGroup.html#manim.mobject.types.vectorized_mobject.VGroup" title="manim.mobject.types.vectorized_mobject.VGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">manim.mobject.types.vectorized_mobject.VGroup</span></code></a></p>
 <p>A vector field.</p>
 <p>Vector fields are based on a function defining a vector at every position.
 This class does by default not include any visible elements but provides
 methods to move other <a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> s along the vector field.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>func</strong> (<em>Callable</em><em>[</em><em>[</em><em>np.ndarray</em><em>]</em><em>, </em><em>np.ndarray</em><em>]</em>) – The function defining the rate of change at every position of the <cite>VectorField</cite>.</p></li>
 <li><p><strong>color</strong> (<em>Color</em><em> | </em><em>None</em>) – The color of the vector field. If set, position-specific coloring is disabled.</p></li>
@@ -863,13 +863,13 @@ methods to move other <a class="reference internal" href="manim.mobject.mobject.
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">depth</span></code></p></td>
-<td><p>The depth of the mobject.</p></td>
+<td><p>Mobject 的深度。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fill_color</span></code></p></td>
 <td><p>If there are multiple colors (for gradient) this returns the first one</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">height</span></code></p></td>
-<td><p>The height of the mobject.</p></td>
+<td><p>Mobject 的高度。</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sheen_factor</span></code></p></td>
 <td><p></p></td>
@@ -884,7 +884,7 @@ methods to move other <a class="reference internal" href="manim.mobject.mobject.
 </table></div>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.vector_field.VectorField.get_colored_background_image">
-<span class="sig-name descname"><span class="pre">get_colored_background_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sampling_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.get_colored_background_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.get_colored_background_image" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_colored_background_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sampling_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.get_colored_background_image"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.get_colored_background_image" title="永久链接至目标">#</a></dt>
 <dd><p>Generate an image that displays the vector field.</p>
 <p>The color at each position is calculated by passing the positing through a
 series of steps:
@@ -892,64 +892,64 @@ Calculate the vector field function at that position, map that vector to a
 single value using <cite>self.color_scheme</cite> and finally generate a color from
 that value using the color gradient.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><p><strong>sampling_rate</strong> (<em>int</em>) – The stepsize at which pixels get included in the image. Lower values give
 more accurate results, but may take a long time to compute.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The vector field image.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>Image.Imgae</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.vector_field.VectorField.get_nudge_updater">
-<span class="sig-name descname"><span class="pre">get_nudge_updater</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">speed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointwise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.get_nudge_updater"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.get_nudge_updater" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_nudge_updater</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">speed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointwise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.get_nudge_updater"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.get_nudge_updater" title="永久链接至目标">#</a></dt>
 <dd><p>Get an update function to move a <a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> along the vector field.</p>
 <p>When used with <a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject.add_updater" title="manim.mobject.mobject.Mobject.add_updater"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_updater()</span></code></a>, the mobject will move along the vector field, where its speed is determined by the magnitude of the vector field.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>speed</strong> (<em>float</em>) – At <cite>speed=1</cite> the distance a mobject moves per second is equal to the magnitude of the vector field along its path. The speed value scales the speed of such a mobject.</p></li>
 <li><p><strong>pointwise</strong> (<em>bool</em>) – Whether to move the mobject along the vector field. See <a class="reference internal" href="#manim.mobject.vector_field.VectorField.nudge" title="manim.mobject.vector_field.VectorField.nudge"><code class="xref py py-meth docutils literal notranslate"><span class="pre">nudge()</span></code></a> for details.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The update function.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>Callable[[<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject">Mobject</a>, float], <a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject">Mobject</a>]</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.vector_field.VectorField.get_vectorized_rgba_gradient_function">
-<span class="sig-name descname"><span class="pre">get_vectorized_rgba_gradient_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.get_vectorized_rgba_gradient_function"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.get_vectorized_rgba_gradient_function" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_vectorized_rgba_gradient_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.get_vectorized_rgba_gradient_function"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.get_vectorized_rgba_gradient_function" title="永久链接至目标">#</a></dt>
 <dd><p>Generates a gradient of rgbas as a numpy array</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>start</strong> (<em>float</em>) – start value used for inverse interpolation at <a class="reference internal" href="manim.utils.bezier.html#manim.utils.bezier.inverse_interpolate" title="manim.utils.bezier.inverse_interpolate"><code class="xref py py-func docutils literal notranslate"><span class="pre">inverse_interpolate()</span></code></a></p></li>
 <li><p><strong>end</strong> (<em>float</em>) – end value used for inverse interpolation at <a class="reference internal" href="manim.utils.bezier.html#manim.utils.bezier.inverse_interpolate" title="manim.utils.bezier.inverse_interpolate"><code class="xref py py-func docutils literal notranslate"><span class="pre">inverse_interpolate()</span></code></a></p></li>
 <li><p><strong>colors</strong> (<em>Iterable</em>) – list of colors to generate the gradient</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p></p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p>function to generate the gradients as numpy arrays representing rgba values</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.vector_field.VectorField.nudge">
-<span class="sig-name descname"><span class="pre">nudge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mob</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">substeps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointwise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.nudge"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.nudge" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">nudge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mob</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">substeps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointwise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.nudge"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.nudge" title="永久链接至目标">#</a></dt>
 <dd><p>Nudge a <a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> along the vector field.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>mob</strong> (<a class="reference internal" href="manim.mobject.mobject.Mobject.html#manim.mobject.mobject.Mobject" title="manim.mobject.mobject.Mobject"><em>manim.mobject.mobject.Mobject</em></a>) – The mobject to move along the vector field</p></li>
 <li><p><strong>dt</strong> (<em>float</em>) – A scalar to the amount the mobject is moved along the vector field.
@@ -963,14 +963,14 @@ points of the individual points of the <a class="reference internal" href="manim
 potentially distorting it.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>This vector field.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.mobject.vector_field.VectorField" title="manim.mobject.vector_field.VectorField">VectorField</a></p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <div class="admonition admonition-manim-example" id="nudging">
 <p class="admonition-title">Example: Nudging <a class="headerlink" href="#nudging">¶</a></p><video autoplay="" class="manim-video" controls="" loop="" src="./Nudging-1.mp4"></video><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manim</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -997,10 +997,10 @@ potentially distorting it.</p></li>
 </div></dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.vector_field.VectorField.nudge_submobjects">
-<span class="sig-name descname"><span class="pre">nudge_submobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">substeps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointwise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.nudge_submobjects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.nudge_submobjects" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">nudge_submobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">substeps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointwise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.nudge_submobjects"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.nudge_submobjects" title="永久链接至目标">#</a></dt>
 <dd><p>Apply a nudge along the vector field to all submobjects.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dt</strong> (<em>float</em>) – A scalar to the amount the mobject is moved along the vector field.
 The actual distance is based on the magnitude of the vector field.</p></li>
@@ -1009,31 +1009,31 @@ give more accurate approximations.</p></li>
 <li><p><strong>pointwise</strong> (<em>bool</em>) – Whether to move the mobject along the vector field. See <a class="reference internal" href="#manim.mobject.vector_field.VectorField.nudge" title="manim.mobject.vector_field.VectorField.nudge"><code class="xref py py-meth docutils literal notranslate"><span class="pre">nudge()</span></code></a> for details.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>This vector field.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.mobject.vector_field.VectorField" title="manim.mobject.vector_field.VectorField">VectorField</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.vector_field.VectorField.scale_func">
-<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">scale_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.scale_func"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.scale_func" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">scale_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.scale_func"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.scale_func" title="永久链接至目标">#</a></dt>
 <dd><p>Scale a vector field function.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>func</strong> (<em>Callable</em><em>[</em><em>[</em><em>numpy.ndarray</em><em>]</em><em>, </em><em>numpy.ndarray</em><em>]</em>) – The function defining a vector field.</p></li>
 <li><p><strong>shift_vector</strong> – The scalar to be applied to the vector field.</p></li>
 <li><p><strong>scalar</strong> (<em>float</em>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p>Callable[[numpy.ndarray], numpy.ndarray]</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+<p class="rubric">实际案例</p>
 <div class="admonition admonition-manim-example" id="scalevectorfieldfunction">
 <p class="admonition-title">Example: ScaleVectorFieldFunction <a class="headerlink" href="#scalevectorfieldfunction">¶</a></p><video autoplay="" class="manim-video" controls="" loop="" src="./ScaleVectorFieldFunction-1.mp4"></video><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manim</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -1050,13 +1050,13 @@ give more accurate approximations.</p></li>
 </pre></div>
 </div>
 </div><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">返回</dt>
 <dd class="field-odd"><p>The scaled vector field function.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p><cite>Callable[[np.ndarray], np.ndarray]</cite></p>
 </dd>
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>func</strong> (<em>Callable</em><em>[</em><em>[</em><em>numpy.ndarray</em><em>]</em><em>, </em><em>numpy.ndarray</em><em>]</em>) – </p></li>
 <li><p><strong>scalar</strong> (<em>float</em>) – </p></li>
@@ -1066,52 +1066,52 @@ give more accurate approximations.</p></li>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.vector_field.VectorField.shift_func">
-<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">shift_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift_vector</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.shift_func"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.shift_func" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">shift_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift_vector</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.shift_func"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.shift_func" title="永久链接至目标">#</a></dt>
 <dd><p>Shift a vector field function.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>func</strong> (<em>Callable</em><em>[</em><em>[</em><em>numpy.ndarray</em><em>]</em><em>, </em><em>numpy.ndarray</em><em>]</em>) – The function defining a vector field.</p></li>
 <li><p><strong>shift_vector</strong> (<em>numpy.ndarray</em>) – The shift to be applied to the vector field.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>The shifted vector field function.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><cite>Callable[[np.ndarray], np.ndarray]</cite></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.vector_field.VectorField.start_submobject_movement">
-<span class="sig-name descname"><span class="pre">start_submobject_movement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">speed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointwise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.start_submobject_movement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.start_submobject_movement" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">start_submobject_movement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">speed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointwise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.start_submobject_movement"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.start_submobject_movement" title="永久链接至目标">#</a></dt>
 <dd><p>Start continuously moving all submobjects along the vector field.</p>
 <p>Calling this method multiple times will result in removing the previous updater created by this method.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">参数</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>speed</strong> (<em>float</em>) – The speed at which to move the submobjects. See <a class="reference internal" href="#manim.mobject.vector_field.VectorField.get_nudge_updater" title="manim.mobject.vector_field.VectorField.get_nudge_updater"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_nudge_updater()</span></code></a> for details.</p></li>
 <li><p><strong>pointwise</strong> (<em>bool</em>) – Whether to move the mobject along the vector field. See <a class="reference internal" href="#manim.mobject.vector_field.VectorField.nudge" title="manim.mobject.vector_field.VectorField.nudge"><code class="xref py py-meth docutils literal notranslate"><span class="pre">nudge()</span></code></a> for details.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">返回</dt>
 <dd class="field-even"><p>This vector field.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">返回类型</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#manim.mobject.vector_field.VectorField" title="manim.mobject.vector_field.VectorField">VectorField</a></p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="manim.mobject.vector_field.VectorField.stop_submobject_movement">
-<span class="sig-name descname"><span class="pre">stop_submobject_movement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.stop_submobject_movement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.stop_submobject_movement" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">stop_submobject_movement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/manim/mobject/vector_field.html#VectorField.stop_submobject_movement"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#manim.mobject.vector_field.VectorField.stop_submobject_movement" title="永久链接至目标">#</a></dt>
 <dd><p>Stops the continuous movement started using <a class="reference internal" href="#manim.mobject.vector_field.VectorField.start_submobject_movement" title="manim.mobject.vector_field.VectorField.start_submobject_movement"><code class="xref py py-meth docutils literal notranslate"><span class="pre">start_submobject_movement()</span></code></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">返回</dt>
 <dd class="field-odd"><p>This vector field.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">返回类型</dt>
 <dd class="field-even"><p><a class="reference internal" href="#manim.mobject.vector_field.VectorField" title="manim.mobject.vector_field.VectorField">VectorField</a></p>
 </dd>
 </dl>
@@ -1177,6 +1177,7 @@ give more accurate approximations.</p></li>
     <script src="../_static/scripts/furo.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/responsiveSvg.js"></script>
     </body>
 </html>
