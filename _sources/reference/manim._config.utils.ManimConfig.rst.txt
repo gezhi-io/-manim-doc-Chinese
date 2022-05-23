@@ -90,8 +90,10 @@ Qualified name: ``manim.\_config.utils.ManimConfig``
      ~ManimConfig.use_opengl_renderer
      ~ManimConfig.use_projection_fill_shaders
      ~ManimConfig.use_projection_stroke_shaders
+     ~ManimConfig.use_webgl_renderer
      ~ManimConfig.verbosity
      ~ManimConfig.video_dir
+     ~ManimConfig.webgl_renderer_path
      ~ManimConfig.window_monitor
      ~ManimConfig.window_position
      ~ManimConfig.window_size

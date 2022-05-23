@@ -18,7 +18,6 @@
    .. rubric:: Functions
 
    
-   .. autofunction:: change_to_rgba_array
    .. autofunction:: drag_pixels
    .. autofunction:: get_full_raster_image_path
    .. autofunction:: invert_image

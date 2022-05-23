@@ -15,6 +15,7 @@ Qualified name: ``manim.mobject.types.image\_mobject.ImageMobject``
    .. autosummary::
       :nosignatures:
       
+      ~ImageMobject.change_to_rgba_array
       ~ImageMobject.fade
       ~ImageMobject.get_pixel_array
       ~ImageMobject.get_style

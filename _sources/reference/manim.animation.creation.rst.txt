@@ -31,8 +31,6 @@
       
         ShowSubmobjectsOneByOne
       
-        SpiralIn
-      
         Uncreate
       
         Unwrite

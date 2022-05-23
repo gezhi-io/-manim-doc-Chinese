@@ -15,7 +15,6 @@ Qualified name: ``manim.mobject.geometry.line.Angle``
    .. autosummary::
       :nosignatures:
       
-      ~Angle.from_three_points
       ~Angle.get_lines
       ~Angle.get_value
 
